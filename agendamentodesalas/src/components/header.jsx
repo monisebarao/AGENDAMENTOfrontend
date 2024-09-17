@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Header = () => {
+export default function Header() {
   return (
     <div style={styles.container}>
       <div style={styles.linha}>
@@ -23,5 +23,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <div className={styles.footerhome}>
       <div className={styles.footer2}>
@@ -23,5 +23,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;
