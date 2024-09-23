@@ -12,7 +12,7 @@ export default function Header() {
       
 
       <Image className={styles.logo}
-        src={"/../public/sesilogo.png"} width="50" height={50} />
+        src={"/public/sesilogo.png"} width="50" height={50} />
 
       <div className={styles.titulo}>
         <h1 style={{ color: "white", fontWeight: "bold" }}>
