@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .footerhome {
   display: flex;
   justify-content: space-around;
@@ -55,8 +55,6 @@
   background-image: url("/src/public/sesifrente.jpeg");
 }
 
-
-=======
 .footerhome{
     display: flex;
     justify-content: space-around;
@@ -116,9 +114,6 @@
     font-size: xx-large;
    }
 
-   .logo{
-  
-   }
     
   .curso {
     margin-left: -96%;
@@ -147,4 +142,3 @@
     font-style: italic;
   }
 
->>>>>>> a1fccf5f6b37cb1cddbc182d85e885e62a8b1ddd
