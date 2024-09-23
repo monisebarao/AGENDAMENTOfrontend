@@ -1,12 +1,16 @@
-// function Card (props) {
-//     return (
-//         <div className="card">
-//           <img src={props.image} alt={props.alt} />
-//           <h2>{props.title}</h2>
-//           <p>{props.description}</p>
-//           <button onClick={props.onClick}>Learn More</button>
-//         </div>
-//       );
-// }
+"use client";
 
-// export default Card;
+import Image from "next/image";
+import React from "react";
+
+function Card(props) {
+  return (
+    <div className="card">
+      <Image src={props.image} alt={props.alt} width={100} height={100} />
+      <h2>{props.title}</h2>
+      <button onClick={props.onClick}>Agendar</button>
+    </div>
+  );
+}
+
+export default Card;
