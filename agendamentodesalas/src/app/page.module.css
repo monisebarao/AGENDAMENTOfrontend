@@ -54,4 +54,32 @@
         padding: 30px; /* Adicionado unidade 'px' */
         background-image: url("/src/public/sesifrente.jpeg");
     }
+
+  .headerconteiner{
+    background-image: url("../public/sesifrente.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+    padding: 137px;
+    margin-bottom: 60%;
+  }
+
+  .linha{
+    border: solid 3px red;
+    background-color: red;
+    padding: 10px;
+    
+    
+  }
+
+   .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+   }
+
+   .logo{
+  
+   }
     
