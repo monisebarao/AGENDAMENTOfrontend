@@ -19,8 +19,8 @@ export default function Corpo() {
           image={lmt}
           alt="lmt"
           title="LABORATÓRIO DE MÍDIAS E TECNOLOGIAS (LMT)"
-          width={}
-          height={}
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -28,6 +28,8 @@ export default function Corpo() {
           image={maker}
           alt="maker"
           title="SALA MAKER"
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -35,6 +37,8 @@ export default function Corpo() {
           image={biblioteca}
           alt="biblio"
           title="BIBLIOTECA"
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -42,6 +46,8 @@ export default function Corpo() {
           image={labfisica}
           alt="labfisica"
           title="LABORATÓRIO DE FÍSICA"
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -49,6 +55,8 @@ export default function Corpo() {
           image={labquibio}
           alt="labquibio"
           title="LABORATÓRIO DE QUÍMICA E BIOLOGIA"
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -56,6 +64,8 @@ export default function Corpo() {
           image={senai}
           alt="senai"
           title="SALA DO CURSO TÉCNICO - SENAI"
+          width={100}
+          height={120}
           // onClick={() => console.log('Card clicked!')}
         />
       </section>
