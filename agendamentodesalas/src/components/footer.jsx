@@ -7,7 +7,7 @@ export default function Footer() {
           <h1>Escola SESI-SP de Vinhedo (CE 242)</h1>
           <br />
           <h1 className={styles.endereco}>
-            Av. Ana Lombardi Gasparini, 1155 - Jardim Nova Canudos
+            Av. Ana Lombardi Gasparini, 1155 - Jardim Nova Canudos.
           </h1>
         </div>
         <br />
