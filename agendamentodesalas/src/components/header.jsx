@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div style={styles.container}>
-      <div style={styles.linha}>
+    <div>
+      <div>
         <hr />
       </div>
 
