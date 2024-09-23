@@ -1,3 +1,4 @@
+
 .card {
   background-color: #C52C0E;
   border: 1px solid #ddd;
@@ -43,3 +44,8 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+  }
