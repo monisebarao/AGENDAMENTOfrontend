@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Card from "@/components/cards";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 
 import lmt from "../public/lmt.jpeg";
@@ -19,11 +20,11 @@ export default function Corpo() {
       {/* NAVEGAÇÃO */}
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="">SALAS</a>
+          <a href="./">SALAS</a>
         </div>
 
         <div className="equipNav">
-          <a href="">EQUIPAMENTOS</a>
+          <Link href="/pagInicialEquipamentos/page.jsx">EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -44,8 +45,8 @@ export default function Corpo() {
           title="LABORATÓRIO DE MÍDIAS E TECNOLOGIAS (LMT)"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
-        />
+          link={}
+          />
 
         <Card
           image={maker}
@@ -53,7 +54,7 @@ export default function Corpo() {
           title="SALA MAKER"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
+          link={}
         />
 
         <Card
@@ -62,7 +63,8 @@ export default function Corpo() {
           title="BIBLIOTECA"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
+          link={}
+
         />
 
         <Card
@@ -71,7 +73,8 @@ export default function Corpo() {
           title="LABORATÓRIO DE FÍSICA"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
+          link={}
+
         />
 
         <Card
@@ -80,7 +83,8 @@ export default function Corpo() {
           title="LABORATÓRIO DE QUÍMICA E BIOLOGIA"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
+          link={}
+
         />
 
         <Card
@@ -89,7 +93,8 @@ export default function Corpo() {
           title="SALA DO CURSO TÉCNICO - SENAI"
           width={240}
           height={177}
-          // onClick={() => console.log('Card clicked!')}
+          link={}
+
         />
       </section>
 
