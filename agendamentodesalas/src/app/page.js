@@ -45,7 +45,7 @@ export default function Corpo() {
           title="LABORATÓRIO DE MÍDIAS E TECNOLOGIAS (LMT)"
           width={240}
           height={177}
-          link={}
+          // link={}
           />
 
         <Card
@@ -54,7 +54,7 @@ export default function Corpo() {
           title="SALA MAKER"
           width={240}
           height={177}
-          link={}
+          // link={}
         />
 
         <Card
@@ -63,7 +63,7 @@ export default function Corpo() {
           title="BIBLIOTECA"
           width={240}
           height={177}
-          link={}
+          // link={}
 
         />
 
@@ -73,7 +73,7 @@ export default function Corpo() {
           title="LABORATÓRIO DE FÍSICA"
           width={240}
           height={177}
-          link={}
+          // link={}
 
         />
 
@@ -83,7 +83,7 @@ export default function Corpo() {
           title="LABORATÓRIO DE QUÍMICA E BIOLOGIA"
           width={240}
           height={177}
-          link={}
+          // link={}
 
         />
 
@@ -93,7 +93,7 @@ export default function Corpo() {
           title="SALA DO CURSO TÉCNICO - SENAI"
           width={240}
           height={177}
-          link={}
+          // link={}
 
         />
       </section>
@@ -113,3 +113,4 @@ export default function Corpo() {
     </div>
   );
 }
+
