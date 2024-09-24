@@ -48,6 +48,32 @@
     font-style: italic;
   }
 
+
+  /* HEADER: */
+  .headerconteiner{
+    background-image: url("../public/sesifrente.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 137px;
+    margin-top: -4%;
+  }
+
+  .linha{
+    border: solid 3px red;
+    background-color: red;
+    padding: 13px;
+    margin-bottom: -1%;
+    
+    
+  }
+
+   .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+   }
+
   @media screen and (max-width: 800px) {
 
     .footerhome{
@@ -102,29 +128,24 @@
   
   }
 
+  /* .linha{
+    margin-right: -22%;
+    margin-bottom: -13%;
+    margin-left: -1%;
+    margin-top: -2%;
+  }
 
-  /* HEADER: */
+  .logo{
+    margin-top: 11%;
+    margin-left: -2%;
+  }
+
   .headerconteiner{
-    background-image: url("../public/sesifrente.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 137px;
-    margin-bottom: 60%;
-    margin-top: -4%;
-  }
+    margin-top: -15%;
+    width: 50%;
+  } */
 
-  .linha{
-    border: solid 3px red;
-    background-color: red;
-    padding: 13px;
-    margin-bottom: -1%;
-    
-    
-  }
 
-   .titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: xx-large;
-   }
+  
+
+   
