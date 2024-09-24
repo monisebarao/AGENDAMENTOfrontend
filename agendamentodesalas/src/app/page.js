@@ -14,13 +14,13 @@ export default function Corpo() {
     <div>
       <Header />
 
-      <section>
+      <section className="disposicaoCards">
         <Card
           image={lmt}
           alt="lmt"
           title="LABORATÓRIO DE MÍDIAS E TECNOLOGIAS (LMT)"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -28,8 +28,8 @@ export default function Corpo() {
           image={maker}
           alt="maker"
           title="SALA MAKER"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -37,8 +37,8 @@ export default function Corpo() {
           image={biblioteca}
           alt="biblio"
           title="BIBLIOTECA"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -46,8 +46,8 @@ export default function Corpo() {
           image={labfisica}
           alt="labfisica"
           title="LABORATÓRIO DE FÍSICA"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -55,8 +55,8 @@ export default function Corpo() {
           image={labquibio}
           alt="labquibio"
           title="LABORATÓRIO DE QUÍMICA E BIOLOGIA"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
 
@@ -64,8 +64,8 @@ export default function Corpo() {
           image={senai}
           alt="senai"
           title="SALA DO CURSO TÉCNICO - SENAI"
-          width={200}
-          height={220}
+          width={240}
+          height={177}
           // onClick={() => console.log('Card clicked!')}
         />
       </section>
