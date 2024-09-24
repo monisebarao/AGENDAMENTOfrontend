@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Card from "@/components/cards";
 import Footer from "@/components/footer";
 
+
 import lmt from "../public/lmt.jpeg";
 import maker from "../public/salamaker.jpeg";
 import biblioteca from "../public/biblioteca.jpeg";
@@ -17,16 +18,18 @@ export default function Corpo() {
 
       {/* NAVEGAÇÃO */}
       <section className="disposicaoNav">
+        <div className="salaNav">
+          <a href="">SALAS</a>
+        </div>
 
-        <div className="salaNav"><a href="">SALAS</a></div>
-
-        <div className="equipNav"><a href="">EQUIPAMENTOS</a></div>
-
+        <div className="equipNav">
+          <a href="">EQUIPAMENTOS</a>
+        </div>
       </section>
-      
-      <br/>
-      <br/>
-      <br/>
+
+      <br />
+      <br />
+      <br />
 
       {/* TITULO PAGINA */}
       <section className="tituloGeral">
@@ -89,6 +92,17 @@ export default function Corpo() {
           // onClick={() => console.log('Card clicked!')}
         />
       </section>
+
+      <br />
+
+      {/* BOTAO VISUALIZAÇÃO DOS AGENDAMENTOS REALIZADOS */}
+      <section className="disposicaoBotao">
+        <button className="visuBotao">Visualizar agendamentos realizados</button>
+        {/* colocar o onclick dps */}
+       
+      </section>
+
+      <br />
 
       <Footer />
     </div>
