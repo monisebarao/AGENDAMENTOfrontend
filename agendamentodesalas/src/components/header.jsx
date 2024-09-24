@@ -16,7 +16,7 @@ export default function Header() {
           <h1 style={{ color: "white", fontWeight: "bold" }}>
             AGENDAMENTOS
           </h1>
-          <h3 style={{ color: "white", fontWeight: "bold", fontSize: 20 }}>
+          <h3 style={{ color: "white", fontWeight: "bold", fontSize: 20, marginTop: -40, }}>
             Seja bem-vindo(a)!
           </h3>
         </div>
