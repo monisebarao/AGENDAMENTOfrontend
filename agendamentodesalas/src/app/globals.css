@@ -91,6 +91,12 @@ a {
 }
 .salaNav:hover , .equipNav:hover{
     background-color: #c52c0e;
+    color:aliceblue;
+
+}
+
+a:hover{
+    color:aliceblue;
 }
 
 
@@ -101,16 +107,32 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 180vh;
+    width: 300vw;
+    margin-left: 7%;
+  }
+
+  .tituloCard{
+    font-size: smaller;
+  }
+
+  .cardButton{
+    font-size: small;
+  }
+
+  .tituloGeral{
+    width: 100%;
   }
 }
+
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
   .disposicaoCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 380vw;
+    width: 300vw;
+    margin-left: 10%;
+
   }
 
   .tituloCard {
@@ -123,8 +145,15 @@ a {
 }
 
 @media screen and (min-width: 501px) and (max-width: 570px) {
-  .unidadeCard {
-    width: auto;
+  .disposicaoCards{
+    width: 300vw;
+    display: flex;
+    flex-direction: column;
+    margin: 16%
+  }
+
+  .unidadeCard{
+    width: 50vw;
   }
 }
 
