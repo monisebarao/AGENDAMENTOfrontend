@@ -48,6 +48,8 @@
     font-style: italic;
   }
 
+
+
   @media screen and (max-width: 800px) {
 
     .footerhome{
@@ -100,3 +102,29 @@
     }
   
   }
+
+
+  /* HEADER: */
+  .headerconteiner{
+    background-image: url("../public/sesifrente.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 137px;
+    margin-top: -4%;
+  }
+
+  .linha{
+    border: solid 3px red;
+    background-color: red;
+    padding: 13px;
+    margin-bottom: -1%;
+    
+    
+  }
+
+   .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+   }
