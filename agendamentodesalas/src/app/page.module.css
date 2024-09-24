@@ -7,7 +7,7 @@
   }
   
   .escola {
-    margin-left: -33%;
+    margin-left: 1%;
     margin-top: 1%;
     color: white;
     font-size: x-small;
@@ -22,7 +22,7 @@
   }
 
   .curso {
-    margin-left: -99%;
+    margin-left: 32%;
     margin-top: 1%;
     color: white;
     font-size:xx-small;
@@ -39,16 +39,220 @@
   }
   
   .copyright {
-    margin-left: -209%;
+    margin-left: -164%;
     margin-top: 11%;
     color: white;
-    padding: 2%;
-    font-size: 47%;
+    font-size: small;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
   }
 
+  @media screen and (min-width: 320px) and (max-width: 340px){
+    .footerhome{
+      display: flex;
+      justify-content: space-around;
+      background-color: #C52C0E;
+      margin-top: 5%;
+      padding: 8%;
+    }
+    
+    .escola {
+      margin-left: 4%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .endereco {
+      margin-left: 1%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.6rem;
+    }
+
+    .curso {
+      margin-left: -106%;
+      margin-top: 24%;
+      color: white;
+      font-size:0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .grupo {
+      margin-left: -1%;
+      margin-top: -7%;
+      color: white;
+      padding: 2%;
+      font-size:0.60rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .copyright {
+      margin-left: -1%;
+      margin-top: 5%;
+      color: white;
+      font-size:0.6rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+    }
+  }
  
+  @media screen and (min-width: 341px) and (max-width: 540px){
+    .footerhome{
+      display: flex;
+      justify-content: space-around;
+      background-color: #C52C0E;
+      margin-top: 5%;
+      padding: 5%;
+    }
+    
+    .escola {
+      margin-left: 9%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .endereco {
+      margin-left: 1%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.6rem;
+    }
+
+    .curso {
+      margin-left: -135%;
+      margin-top: 14%;
+      color: white;
+      font-size:0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .grupo {
+      margin-left: -1%;
+      margin-top: -7%;
+      color: white;
+      padding: 2%;
+      font-size:0.60rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .copyright {
+      margin-left: -1%;
+      margin-top: 5%;
+      color: white;
+      font-size:0.6rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+    }
+  }
+ 
+  @media screen and (min-width: 541px) and (max-width: 700px){
+    .footerhome{
+      display: flex;
+      justify-content: space-around;
+      background-color: #C52C0E;
+      margin-top: 5%;
+      padding: -10%;
+    }
+    
+    .escola {
+      margin-left: 4%;
+      margin-top: 2%;
+      color: white;
+      font-size: 0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .endereco {
+      margin-left: 1%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.6rem;
+    }
+
+    .curso {
+      margin-left: 3%;
+      margin-top: 1%;
+      color: white;
+      font-size:0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .grupo {
+      margin-left: -1%;
+      margin-top: -7%;
+      color: white;
+      padding: 2%;
+      font-size:0.60rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .copyright {
+      margin-left: -60%;
+      margin-top: 14%;
+      color: white;
+      font-size: 0.7rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+    }
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 800px){
+    .footerhome{
+      display: flex;
+      justify-content: space-around;
+      background-color: #C52C0E;
+      margin-top: 5%;
+      padding: -10%;
+    }
+    
+    .escola {
+      margin-left: 4%;
+      margin-top: 2%;
+      color: white;
+      font-size: 0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .endereco {
+      margin-left: 1%;
+      margin-top: -3%;
+      color: white;
+      font-size: 0.6rem;
+    }
+
+    .curso {
+      margin-left: 3%;
+      margin-top: 1%;
+      color: white;
+      font-size:0.4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .grupo {
+      margin-left: -1%;
+      margin-top: -7%;
+      color: white;
+      padding: 2%;
+      font-size:0.60rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .copyright {
+      margin-left: -70%;
+      margin-top: 14%;
+      color: white;
+      font-size: 0.7rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+    }
+  }
+
+ 
+
   /* HEADER: */
   .headerconteiner{
     background-image: url("../public/sesifrente.jpeg");
@@ -73,20 +277,88 @@
     font-size: xx-large;
    }
 
-   @media screen and (max-width: 800px) {
+   @media screen and (min-width: 375px) and (max-width: 400px ) {
     .linha{
-      width: 135%;
+      width: 172%;
+    margin-left: -3%;
     margin-top: -2%;
-    margin-left: -3%;
-    }
-
+}
     .headerconteiner{
-      width: 55%;
-    margin-top: -20%;
-    margin-left: -3%;
+      width: 103%;
+    margin-top: -17%;
+    margin-left: -2%;
     }
 
     .titulo{
-      font-size: larger;
+      font-size: larger
     }
    }
+
+   @media screen and (min-width: 400px) and (max-width: 500px ) {
+    .linha{
+      width: 390%;
+    margin-left: -2%;
+    margin-top: -2%;
+    }
+    .headerconteiner{
+      width: 327%;
+    margin-top: -16%;
+    margin-left: -2%;
+    }
+
+   }
+
+   @media screen and (min-width: 500px) and (max-width: 600px ) {
+    .linha{
+      width: 113%;
+    margin-left: -2%;
+    margin-top: -2%;
+    }
+
+    .headerconteiner{
+      width: 63%;
+    margin-left: -2%;
+    margin-top: -12%;
+    }
+   }
+
+   @media screen and (min-width: 600px) and (max-width: 768px ) {
+    .linha{
+      width: 109%;
+    margin-left: -2%;
+    margin-top: -2%;
+    }
+    .headerconteiner{
+      width: 68%;
+    margin-left: -2%;
+    margin-top: -10%;
+    }
+
+   }
+   @media screen and (min-width: 600px) and (max-width: 768px ) {
+    .linha{
+      width: 142%;
+    margin-left: -2%;
+    margin-top: -1%;
+
+    }
+
+    .headerconteiner{
+      width: 109%;
+      margin-left: -2%;
+      margin-top: -8%;
+    }
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1024px ) {
+    .linha{
+      width: 100%;
+    margin-left: -1%;
+    margin-top: -1%;
+    }
+    .headerconteiner{
+      width: 76%;
+    margin-left: -1%;
+    margin-top: -6%;
+}
+    }

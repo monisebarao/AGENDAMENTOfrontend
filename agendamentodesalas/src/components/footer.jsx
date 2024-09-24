@@ -14,12 +14,10 @@ export default function Footer() {
         <div className={styles.curso}>
           <h1>Desenvolvimento de Sistemas - SENAI</h1>
           <br />
-          <h1 className={styles.grupo}>Grupo 6 - Curso Técnico</h1>
-        </div>
-        <br />
-       
-        <div className={styles.copyright}>
-          <h1>Copyright 2024 © Todos os direitos reservados. - DM0</h1>
+            <h1 className={styles.grupo}>Grupo 6 - Curso Técnico</h1>
+       <br/>
+          <h1 className={styles.copyright}>Copyright 2024 © Todos os direitos reservados. - DM0</h1>
+          <br/>
         </div>
       </div>
   );
