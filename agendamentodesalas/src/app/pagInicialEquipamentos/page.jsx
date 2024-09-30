@@ -21,7 +21,7 @@ function Corpo2() {
         </div>
 
         <div className="equipNav">
-          <a href="">EQUIPAMENTOS</a>
+          <a href="./pagInicialEquipamentos">EQUIPAMENTOS</a>
         </div>
       </section>
 

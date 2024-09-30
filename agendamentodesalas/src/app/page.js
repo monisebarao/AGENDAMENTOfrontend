@@ -11,6 +11,8 @@ import labfisica from "../public/labfisica.jpeg";
 import labquibio from "../public/labquibio.jpeg";
 import senai from "../public/salasenai.jpeg";
 
+import linkPagEquipamentos from '@/app/pagInicialEquipamentos/page'
+
 export default function Corpo() {
   return (
     <div>
@@ -24,7 +26,7 @@ export default function Corpo() {
         </div>
 
         <div className="equipNav">
-          <Link href="/pagInicialEquipamentos/page.jsx">EQUIPAMENTOS</Link>
+          <Link href='./pagInicialEquipamentos'>EQUIPAMENTOS</Link>
         </div>
       </section>
 
