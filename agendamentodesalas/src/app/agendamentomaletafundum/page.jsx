@@ -30,7 +30,7 @@ function agendaComputadorSenai() {
     <div>
       {/* TITULO */}
       <section className="tituloGeral">
-        <h3>{props.tituloEquip}</h3>
+        <h3>MALETA LEGO- FUNDAMENTAL I</h3>
       </section>
 
       <br />
