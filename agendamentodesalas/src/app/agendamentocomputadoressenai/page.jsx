@@ -30,7 +30,7 @@ function agendaComputadorSenai() {
     <div>
       {/* TITULO */}
       <section className="tituloGeral">
-        <h3>{props.tituloEquip}</h3>
+        <h3>COMPUTADORES DA SALA DO CURSO TÉCNICO- SALA 1</h3>
       </section>
 
       <br />
