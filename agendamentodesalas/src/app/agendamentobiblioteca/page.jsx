@@ -28,41 +28,14 @@ export default function Form() {
                 <h3>BIBLIOTECA</h3>
             </section>
 
-                <form>
-                    <label>
-                        Nome do professor:
-                        <input type="text" name="name" />
-                    </label>
+            <form>
+                <label>
+                    Nome do professor:
+                    <input type="text" name="name" />
+                </label>
 
-                    <h2>Disciplina:</h2>
-                    <select value={disciplina} onChange={handleChange}>
-                    <option value="mat">Matemática</option>
-                    <option value="lp">Lingua Portugesa</option>
-                    <option value="bio">Biologia</option>
-                    <option value="quim">Química</option>
-                    </select>
-
-                    
-                    <label for="appt">Horário de inicio:</label>
-                    <input type="time" id="appt" name="appt"></input>
-
-                    
-                    <label for="appt">Horário de término:</label>
-                    <input type="time" id="appt" name="appt"></input>
-
-                    
-                    <label>Duração:</label>
-                    <input type="checkbox" name="h1" value="50min"/>
-                    <label for="h1"> 50min (1 aula)</label>
-
-                    <br/>
-
-                    <input type="checkbox" name="h2" value="1h40min"/>
-                    <label for="h2"> 1h40min (2 aulas)</label>
-
-
-                    <label>Turma:</label>
-                    <select value={turma} onChange={handleChange}>
+                <h2>Disciplina:</h2>
+                <select value={disciplina} onChange={handleChange}>
                     <option>Arte</option>
                     <option>Biologia/Ciência da Natureza</option>
                     <option>Educação Física</option>
@@ -75,16 +48,56 @@ export default function Form() {
                     <option>Matemática </option>
                     <option>Programação e Robótica</option>
                     <option></option>
-                    </select>
+                </select>
 
-                    <input type="submit" value="REALIZAR AGENDAMENTO" />
-                    </form>
 
-                    <Footer/>
-                    
-                    </div>
+                <label for="appt">Horário de inicio:</label>
+                <input type="time" id="appt" name="appt"></input>
 
-                
 
-                    );
+                <label for="appt">Horário de término:</label>
+                <input type="time" id="appt" name="appt"></input>
+
+
+                <label>Duração:</label>
+                <input type="checkbox" name="h1" value="50min" />
+                <label for="h1"> 50min (1 aula)</label>
+
+                <br />
+
+                <input type="checkbox" name="h2" value="1h40min" />
+                <label for="h2"> 1h40min (2 aulas)</label>
+
+
+                <label>Turma:</label>
+                <select value={turma} onChange={handleChange}>
+                    <option>1º Ano - Fundamental I</option>
+                    <option>2º Ano - Fundamental I</option>
+                    <option>3º Ano - Fundamental I</option>
+                    <option>4º Ano - Fundamental I</option>
+                    <option>5º Ano - Fundamental I</option>
+                    <option>6º Ano A - Fundamental II</option>
+                    <option>6º Ano B - Fundamental II</option>
+                    <option>7º Ano A - Fundamental II</option>
+                    <option>7º Ano B - Fundamental II</option>
+                    <option>8º Ano A - Fundamental II</option>
+                    <option>8º Ano B - Fundamental II</option>
+                    <option>9º Ano A - Fundamental II</option>
+                    <option>9º Ano B - Fundamental II</option>
+                    <option>1º Ano A - Ensino Médio</option>
+                    <option>1º Ano B - Ensino Médio</option>
+                    <option>2º Ano - Ensino Médio</option>
+                    <option>3º Ano - Ensino Médio</option>
+                </select>
+
+                <input type="submit" value="REALIZAR AGENDAMENTO" />
+            </form>
+
+            <Footer />
+
+        </div>
+
+
+
+    );
 };
