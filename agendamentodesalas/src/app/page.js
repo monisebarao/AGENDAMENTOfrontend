@@ -65,7 +65,7 @@ export default function Corpo() {
           title="BIBLIOTECA"
           width={240}
           height={177}
-          // link={}
+          link={"./agendamentobiblioteca"}
 
         />
 
