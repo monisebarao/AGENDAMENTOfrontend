@@ -13,10 +13,10 @@ export default function Header() {
       <div className={styles.headerconteiner}>
 
 <div className={styles.titulo}>
-          <h1 style={{ color: "white", fontWeight: "bold" }}>
+          <h1 style={{ color: "white", fontWeight: "bold",  textShadow: "1px 1px 3px black" }}>
             AGENDAMENTOS
           </h1>
-          <h3 style={{ color: "white", fontWeight: "bold", fontSize: 20,  }}>
+          <h3 style={{ color: "white", fontWeight: "bold", fontSize: 20, textShadow: "1px 1px 3px black"}}>
             Seja bem-vindo(a)!
           </h3>
         </div>

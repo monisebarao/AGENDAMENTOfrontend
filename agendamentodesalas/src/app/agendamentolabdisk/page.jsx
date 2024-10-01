@@ -2,6 +2,7 @@
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Link from "next/link";
 
 function agendaLabdisk() {
   //     const [disciplina, setDisciplina] = useState("");
@@ -16,11 +17,11 @@ function agendaLabdisk() {
 
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="./">SALAS</a>
+          <Link href="/">SALAS</Link>
         </div>
 
         <div className="equipNav">
-          <a href="./pagInicialEquipamentos">EQUIPAMENTOS</a>
+          <Link href="/">EQUIPAMENTOS</Link>
         </div>
       </section>
       <br />
@@ -119,13 +120,8 @@ function agendaLabdisk() {
 
         {/* BOTAO SUBMIT */}
         <section>
-          <button
-            // href={props.linkAgenda}
-            // className=""
-            type="submit"
-            className="botaoForm"
-          >
-            Realizar Agendamento
+          <button className="botaoForm">
+            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>
