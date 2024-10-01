@@ -2,6 +2,7 @@
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Link from "next/link";
 
 function agendaComputadorSenai() {
   //     const [disciplina, setDisciplina] = useState("");
@@ -16,13 +17,14 @@ function agendaComputadorSenai() {
 
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="./">SALAS</a>
+          <Link href="/">SALAS</Link>
         </div>
 
         <div className="equipNav">
-          <a href="./pagInicialEquipamentos">EQUIPAMENTOS</a>
+          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS </Link>
         </div>
       </section>
+      <br />
       <br />
 
       {/* TITULO */}
@@ -119,13 +121,8 @@ function agendaComputadorSenai() {
 
         {/* BOTAO SUBMIT */}
         <section>
-          <button
-            // href={props.linkAgenda}
-            // className=""
-            type="submit"
-            className="botaoForm"
-          >
-            Realizar Agendamento
+          <button className="botaoForm">
+            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>

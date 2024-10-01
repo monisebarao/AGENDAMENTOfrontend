@@ -19,11 +19,11 @@ export default function Corpo() {
       {/* NAVEGAÇÃO */}
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="./">SALAS</a>
+          <Link href="/">SALAS</Link>
         </div>
 
         <div className="equipNav">
-          <Link href='./pagInicialEquipamentos'>EQUIPAMENTOS</Link>
+          <Link href='/pagInicialEquipamentos'>EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -38,14 +38,14 @@ export default function Corpo() {
 
       {/* SEÇÃO CARDS */}
       <section className="disposicaoCards">
-        <Card
+      <Card
           image={lmt}
           alt="lmt"
           title="LABORATÓRIO DE MÍDIAS E TECNOLOGIAS (LMT)"
           width={240}
           height={177}
-          // link={}
-          />
+          link="/agendamentolmt"
+        />
 
         <Card
           image={maker}
@@ -53,7 +53,7 @@ export default function Corpo() {
           title="SALA MAKER"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentomaker"
         />
 
         <Card
@@ -62,8 +62,7 @@ export default function Corpo() {
           title="BIBLIOTECA"
           width={240}
           height={177}
-          link={"./agendamentobiblioteca"}
-
+          link="/agendamentobiblioteca"
         />
 
         <Card
@@ -72,8 +71,7 @@ export default function Corpo() {
           title="LABORATÓRIO DE FÍSICA"
           width={240}
           height={177}
-          // link={}
-
+          link="/agendamentolabfisica"
         />
 
         <Card
@@ -82,8 +80,7 @@ export default function Corpo() {
           title="LABORATÓRIO DE QUÍMICA E BIOLOGIA"
           width={240}
           height={177}
-          // link={}
-
+          link="/agendamentobioqui"
         />
 
         <Card
@@ -92,8 +89,7 @@ export default function Corpo() {
           title="SALA DO CURSO TÉCNICO - SENAI"
           width={240}
           height={177}
-          // link={}
-
+          link="/agendamentosalasenai"
         />
       </section>
 
@@ -101,9 +97,7 @@ export default function Corpo() {
 
       {/* BOTAO VISUALIZAÇÃO DOS AGENDAMENTOS REALIZADOS */}
       <section className="disposicaoBotao">
-        <button className="visuBotao">Visualizar agendamentos realizados</button>
-        {/* colocar o onclick dps */}
-
+        <button className="visuBotao"><Link href="/visualizacaoagendamentos" className="visuButtonLink">Visualizar agendamentos realizados</Link></button>
       </section>
 
       <br />

@@ -35,12 +35,15 @@
 
 .cardButton {
   background-color: black;
-  color: aliceblue;
   width: fit-content;
   padding: 8px;
   border-radius: 10px;
   font-size: small;
   cursor: pointer;
+}
+
+.cardButtonLink{
+  color: rgb(241, 247, 253);
 }
 
 .cardButton:hover {
@@ -109,7 +112,7 @@ a:hover {
 .visuBotao {
   color: rgb(108, 0, 0);
   border: 2px solid rgb(108, 0, 0);
-  padding: 1.5%;
+  padding: 1.2%;
   border-radius: 30px;
   cursor: pointer;
   background-color: white;
@@ -118,8 +121,13 @@ a:hover {
 }
 
 .visuBotao:hover {
-  background-color: #ffebeb;
+  background-color: #ffe6e6;
 }
+
+.visuButtonLink, .visuButtonLink:hover{
+  color: #691200;
+}
+
 
 .disposicaoFormEquip{
   display: flex;
@@ -189,6 +197,7 @@ a:hover {
   .tituloGeral {
     width: 100%;
   }
+
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
