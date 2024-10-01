@@ -28,7 +28,7 @@ export default function Form() {
                 <h3>LABORATÓRIO DE BIOLOGIA E QUÍMICA</h3>
             </section>
 
-            <form>
+            <form className="disposicaoFormEquip">
                 <label>
                     Nome do professor:
                     <input type="text" name="name" />
@@ -89,15 +89,21 @@ export default function Form() {
                     <option>2º Ano - Ensino Médio</option>
                     <option>3º Ano - Ensino Médio</option>
                 </select>
-
-                <input type="submit" value="REALIZAR AGENDAMENTO" />
+                {/* BOTAO SUBMIT */}
+                <section>
+                    <button
+                        // href={props.linkAgenda}
+                        // className=""
+                        type="submit"
+                        className="botaoForm"
+                    >
+                        Realizar Agendamento
+                    </button>
+                </section>
             </form>
 
             <Footer />
 
         </div>
-
-
-
     );
 };
