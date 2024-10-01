@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-.cardButtonLink{
+.cardButtonLink {
   color: rgb(241, 247, 253);
 }
 
@@ -124,27 +124,29 @@ a:hover {
   background-color: #ffe6e6;
 }
 
-.visuButtonLink, .visuButtonLink:hover{
+.visuButtonLink,
+.visuButtonLink:hover {
   color: #691200;
 }
 
-
-.disposicaoFormEquip{
+.disposicaoFormEquip {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 5% 10%;
-  align-content:space-around;
+  align-content: space-around;
   margin-left: 35%;
 }
 
-.disposicaoFormEquip label{
+.disposicaoFormEquip label {
   font-size: medium;
   font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.disposicaoFormEquip select, .disposicaoFormEquip input{
+.disposicaoFormEquip select,
+.disposicaoFormEquip input {
   font-size: 1rem;
   width: 50%;
   padding: 1%;
@@ -153,7 +155,7 @@ a:hover {
   border-radius: 5px;
 }
 
-.botaoForm{
+.botaoForm {
   background-color: #c52c0e;
   color: azure;
   padding: 1.5%;
@@ -162,18 +164,13 @@ a:hover {
   font-size: medium;
 }
 
-.botaoForm:hover{
+.botaoForm:hover {
   background-color: #691200;
 }
 
-.disposicaoFormEquip button{
+.disposicaoFormEquip button {
   margin-left: 12%;
 }
-
-
-
-
-
 
 /* RESPONSIVIDADE */
 
@@ -198,6 +195,22 @@ a:hover {
     width: 100%;
   }
 
+  .tituloGeral h3 {
+    font-size: 0.7em;
+  }
+
+  .disposicaoFormEquip {
+    width: 80%;
+    margin: auto;
+  }
+
+  .botaoForm {
+    font-size: medium;
+  }
+
+  .disposicaoFormEquip select, .disposicaoFormEquip input{
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 500px) {
@@ -216,6 +229,19 @@ a:hover {
   .cardButton {
     font-size: large;
   }
+
+  .tituloGeral h3 {
+    font-size: 0.8em;
+  }
+
+  .disposicaoFormEquip {
+    width: 75%;
+    margin: auto;
+  }
+
+  .botaoForm {
+    font-size: medium;
+  }
 }
 
 @media screen and (min-width: 501px) and (max-width: 570px) {
@@ -228,6 +254,26 @@ a:hover {
 
   .unidadeCard {
     width: 50vw;
+  }
+
+  .tituloGeral h3 {
+    font-size: 1em;
+  }
+
+  .disposicaoFormEquip {
+    width: 85%;
+    margin: auto;
+  }
+
+  .botaoForm {
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 900px) {
+  .disposicaoFormEquip select,
+  .disposicaoFormEquip input {
+    font-size: 1em;
   }
 }
 
