@@ -9,3 +9,5 @@ export default function Card (props) {
         </div>
     )
 }
+
+// onClick={() => props.link}

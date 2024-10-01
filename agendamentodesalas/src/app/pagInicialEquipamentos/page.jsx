@@ -9,7 +9,7 @@ import legoFundII from "@/public/maletafund2.jpeg";
 import som from "@/public/caixadesom.jpeg";
 import labdisk from "@/public/labdisks.jpeg";
 import Footer from "@/components/footer";
-// import PaginaAgendamento from "@/app/agendamentosequipamentos";
+
 
 function Corpo2() {
   return (
@@ -41,7 +41,7 @@ function Corpo2() {
           title="LABORATÓRIO DE INFORMÁTICA MOVEL (LIM)"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentolim"
         />
 
         <Card
@@ -50,7 +50,7 @@ function Corpo2() {
           title="COMPUTADORES DA SALA DO CURSO TÉCNICO - SALA 1"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentocomputadoressenai"
 
         />
 
@@ -60,7 +60,7 @@ function Corpo2() {
           title="MALETA LEGO - FUNDAMENTAL I"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentomaletafundum"
 
         />
 
@@ -70,7 +70,7 @@ function Corpo2() {
           title="MALETA LEFO - FUNDAMENTAL II"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentomaletafunddois"
 
         />
 
@@ -80,7 +80,7 @@ function Corpo2() {
           title="CAIXA DE SOM"
           width={240}
           height={177}
-          // link={}
+          link="/agendamentosom"
 
         />
 
@@ -90,7 +90,7 @@ function Corpo2() {
           title="LABDISK"
           width={240}
           height={177}
-          // link={}
+          link="agendamentolabdisk"
 
         />
       </section>

@@ -3,7 +3,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-function agendaMaletaDois() {
+function agendaSom() {
   //     const [disciplina, setDisciplina] = useState("");
 
   //   const handleChange = (event) => {
@@ -27,7 +27,7 @@ function agendaMaletaDois() {
 
       {/* TITULO */}
       <section className="tituloGeral">
-        <h3>MALETA LEGO - FUNDAMENTAL II</h3>
+        <h3>CAIXA DE SOM</h3>
       </section>
 
       <br />
@@ -138,4 +138,4 @@ function agendaMaletaDois() {
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<formEquip/>);
 
-export default agendaMaletaDois;
+export default agendaSom;
