@@ -323,15 +323,17 @@
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .tituloPrincipal {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .bemVindos {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .headerconteiner{
     padding: 20%;
+    margin-top: -20%;
+
   }
 }
 
@@ -354,7 +356,7 @@
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) {
+@media screen and (min-width: 401px) and (max-width: 500px) {
   .linha {
     margin-left: -2%;
     margin-top: -2%;
@@ -378,62 +380,44 @@
 }
 
 @media screen and (min-width: 501px) and (max-width: 600px) {
-  /* .linha {
-    width: 113%;
+  .linha {
     margin-left: -2%;
     margin-top: -2%;
   }
 
   .headerconteiner {
-    width: 63%;
     margin-left: -2%;
     margin-top: -12%;
-  } */
+  } 
 
   .tituloPrincipal {
-    font-size: 0.5rem;
+    font-size: 2.5rem;
   }
 
   .bemVindos {
-    font-size: 0.1rem;
+    font-size: 1rem;
   }
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
   .linha {
-    width: 109%;
     margin-left: -2%;
     margin-top: -2%;
   }
   .headerconteiner {
-    width: 68%;
     margin-left: -2%;
     margin-top: -10%;
   }
-}
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  .linha {
-    width: 142%;
-    margin-left: -2%;
-    margin-top: -1%;
-  }
 
-  .headerconteiner {
-    width: 109%;
-    margin-left: -2%;
-    margin-top: -8%;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .linha {
-    width: 100%;
     margin-left: -1%;
     margin-top: -1%;
   }
   .headerconteiner {
-    width: 76%;
     margin-left: -1%;
     margin-top: -6%;
   }

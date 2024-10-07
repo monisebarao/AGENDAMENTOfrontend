@@ -236,7 +236,7 @@ a:hover {
 }
 
 
-@media screen and (min-width: 401px) and (max-width: 500px) {
+@media screen and (min-width: 401px) and (max-width: 499px) {
   .disposicaoCards {
     display: flex;
     flex-direction: column;
@@ -245,12 +245,12 @@ a:hover {
     margin-left: 10%;
   }
 
-  .tituloCard {
-    font-size: larger;
+  .tituloCard{
+    font-size: medium;
   }
 
   .cardButton {
-    font-size: large;
+    font-size:smaller;
   }
 
   .tituloGeral h3 {
@@ -267,7 +267,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 570px) {
+@media screen and (min-width: 500px) and (max-width: 570px) {
   .disposicaoCards {
     width: 300vw;
     display: flex;
