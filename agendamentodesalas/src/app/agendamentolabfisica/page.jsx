@@ -54,6 +54,7 @@ export default function Form() {
         </select>
         <br />
     
+    
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
         <br />

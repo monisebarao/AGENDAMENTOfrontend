@@ -22,6 +22,7 @@ export default function Form() {
       <br />
       <br />
 
+
       {/* TITULO PAGINA */}
       <section className="tituloGeral">
         <h3>SALA CURSO TÉCNICO - SENAI</h3>

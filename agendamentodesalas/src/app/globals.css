@@ -235,6 +235,7 @@ a:hover {
   }
 }
 
+
 @media screen and (min-width: 401px) and (max-width: 500px) {
   .disposicaoCards {
     display: flex;
