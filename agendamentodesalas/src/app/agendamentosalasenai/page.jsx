@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Form() {
   return (
@@ -23,7 +24,7 @@ export default function Form() {
 
       {/* TITULO PAGINA */}
       <section className="tituloGeral">
-        <h3>SALA CURSO TÉCNICO</h3>
+        <h3>SALA CURSO TÉCNICO - SENAI</h3>
       </section>
 
       <br />
