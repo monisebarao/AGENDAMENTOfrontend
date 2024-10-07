@@ -26,13 +26,16 @@ export default function Form() {
         <h3>SALA CURSO TÉCNICO</h3>
       </section>
 
-      <form className="disposicaoFormEquip">
+      <br />
+
+      <form className="disposicaoFormSalas">
         <label>
           Nome do professor:
           <input type="text" name="name" />
         </label>
+        <br />
 
-        <h2>Disciplina:</h2>
+        <label>Disciplina:</label>
         <select
         // value={disciplina} onChange={handleChange}
         >
@@ -48,21 +51,15 @@ export default function Form() {
           <option>Matemática </option>
           <option>Programação e Robótica</option>
         </select>
+        <br />
 
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
+        <br />
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
-
-        <label>Duração:</label>
-        <input type="checkbox" name="h1" value="50min" />
-        <label for="h1"> 50min (1 aula)</label>
-
         <br />
-
-        <input type="checkbox" name="h2" value="1h40min" />
-        <label for="h2"> 1h40min (2 aulas)</label>
 
         <label>Turma:</label>
         <select
@@ -86,6 +83,8 @@ export default function Form() {
           <option>2º Ano - Ensino Médio</option>
           <option>3º Ano - Ensino Médio</option>
         </select>
+      <br />
+
         {/* BOTAO SUBMIT */}
         <section>
           <button className="botaoForm">
