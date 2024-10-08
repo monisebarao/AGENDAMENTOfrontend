@@ -1,6 +1,6 @@
 import Card from "@/components/cards";
 import Header from "@/components/header";
-// import Link from "next/link";
+import Link from "next/link";
 
 import lim from "@/public/lim.jpeg";
 import compSenai from "@/public/computadorsenai.jpeg";
@@ -10,7 +10,6 @@ import som from "@/public/caixadesom.jpeg";
 import labdisk from "@/public/labdisks.jpeg";
 import Footer from "@/components/footer";
 
-
 function Corpo2() {
   return (
     <div>
@@ -18,11 +17,11 @@ function Corpo2() {
 
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="./">SALAS</a>
+          <Link href="/">SALAS</Link>
         </div>
 
         <div className="equipNav">
-          <a href="./pagInicialEquipamentos">EQUIPAMENTOS</a>
+          <Link href="./pagInicialEquipamentos">EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -51,7 +50,6 @@ function Corpo2() {
           width={240}
           height={177}
           link="/agendamentocomputadoressenai"
-
         />
 
         <Card
@@ -61,17 +59,15 @@ function Corpo2() {
           width={240}
           height={177}
           link="/agendamentomaletafundum"
-
         />
 
         <Card
           image={legoFundII}
           alt="legoFundII"
-          title="MALETA LEFO - FUNDAMENTAL II"
+          title="MALETA LEGO - FUNDAMENTAL II"
           width={240}
           height={177}
           link="/agendamentomaletafunddois"
-
         />
 
         <Card
@@ -81,7 +77,6 @@ function Corpo2() {
           width={240}
           height={177}
           link="/agendamentosom"
-
         />
 
         <Card
@@ -91,7 +86,6 @@ function Corpo2() {
           width={240}
           height={177}
           link="agendamentolabdisk"
-
         />
       </section>
 
@@ -99,7 +93,9 @@ function Corpo2() {
 
       <section className="disposicaoBotao">
         <button className="visuBotao">
-          Visualizar agendamentos realizados
+          <Link href="/visualizacaoagendamentos" className="visuButtonLink">
+            Visualizar agendamentos realizados
+          </Link>
         </button>
       </section>
 
