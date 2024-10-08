@@ -65,11 +65,6 @@ export default function Form() {
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
-<<<<<<< HEAD
-
-=======
-        <br />
->>>>>>> 44c0dc8fc3f6f0b2de5ffc36e02e4859fcbfe2e0
 
         <label>Turma:</label>
         <select
