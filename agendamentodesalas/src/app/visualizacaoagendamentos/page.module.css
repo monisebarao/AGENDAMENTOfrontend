@@ -1,0 +1,27 @@
+.header{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.botaoVoltar{
+    background-color:  #000000;
+    border-radius: 50px;
+    padding: 1%;
+    border: none;
+}
+
+.botaoVoltar:hover{
+    background-color:  #340900;
+}
+
+.link{
+    color: white;
+}
+
+.cardAgendamentosFeitos{
+    background-color: #8a0000;
+}
+
