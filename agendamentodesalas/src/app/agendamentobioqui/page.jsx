@@ -29,6 +29,7 @@ export default function Form() {
       <form className="disposicaoFormEquip">
         <label>
           Nome do professor:
+          <br/>
           <input type="text" name="name" />
         </label>
 
@@ -47,6 +48,10 @@ export default function Form() {
           <option>Língua Portuguesa</option>
           <option>Matemática </option>
           <option>Programação e Robótica</option>
+          <option>Tópicos avançados</option>
+          <option>Mundo do trabalho e empreendedorismo</option>
+          <option>Trilha de produção de texto</option>
+          <option>Mentoria para o futuro</option>
         </select>
 
         <label for="appt">Horário de inicio:</label>
@@ -54,15 +59,6 @@ export default function Form() {
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
-
-        <label>Duração:</label>
-        <input type="checkbox" name="h1" value="50min" />
-        <label for="h1"> 50min (1 aula)</label>
-
-        <br />
-
-        <input type="checkbox" name="h2" value="1h40min" />
-        <label for="h2"> 1h40min (2 aulas)</label>
 
         <label>Turma:</label>
         <select

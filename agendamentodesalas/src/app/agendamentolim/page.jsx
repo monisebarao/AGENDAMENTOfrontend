@@ -65,6 +65,10 @@ function agendaLim() {
             <option>Língua Portuguesa</option>
             <option>Matemática </option>
             <option>Programação e Robótica</option>
+            <option>Tópicos avançados</option>
+            <option>Mundo do trabalho e empreendedorismo</option>
+            <option>Trilha de produção de texto</option>
+            <option>Mentoria para o futuro</option>
           </select>
         </div>
         <br />
