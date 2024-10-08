@@ -37,6 +37,7 @@ export default function Form() {
         <select
         // value={disciplina} onChange={handleChange}
         >
+          
           <option>Arte</option>
           <option>Biologia/Ciência da Natureza</option>
           <option>Educação Física</option>
@@ -47,7 +48,11 @@ export default function Form() {
           <option>Língua Inglesa</option>
           <option>Língua Portuguesa</option>
           <option>Matemática </option>
+          <option>Mentoria para o futuro</option>
+          <option>Mundo do trabalho e empreendedorismo</option>
           <option>Programação e Robótica</option>
+          <option>Tópicos Avançados</option>
+          <option>Trilha de produção de texto</option>          
         </select>
         <br />
 
