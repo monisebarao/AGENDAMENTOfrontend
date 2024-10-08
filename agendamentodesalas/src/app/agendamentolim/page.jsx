@@ -71,7 +71,6 @@ function agendaLim() {
             <option>Mentoria para o futuro</option>
           </select>
         </div>
-        <br />
 
         <div>
           <label>Horário de início:</label>

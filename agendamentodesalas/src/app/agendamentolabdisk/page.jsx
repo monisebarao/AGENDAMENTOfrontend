@@ -45,6 +45,7 @@ function agendaLabdisk() {
           <input type="text" name="nomeProf" />
         </div>
         <br />
+        <br/>
 
         <div>
           <label>Disciplina:</label>
@@ -71,6 +72,7 @@ function agendaLabdisk() {
           </select>
         </div>
         <br />
+        <br/>
 
         <div>
           <label>Horário de início:</label>
@@ -78,6 +80,7 @@ function agendaLabdisk() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br/>
 
         <div>
           <label>Horário de término:</label>
@@ -85,6 +88,7 @@ function agendaLabdisk() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br/>
 
         <div>
           <label>Turma:</label>
@@ -110,6 +114,7 @@ function agendaLabdisk() {
           </select>
         </div>
         <br />
+        <br/>
 
         <div>
           <label>Quantidade:</label>
@@ -120,10 +125,9 @@ function agendaLabdisk() {
         <br />
         <br />
 
-        <br />
-
         {/* BOTAO SUBMIT */}
         <section>
+          <br/>
           <button className="botaoForm">
             <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
           </button>
