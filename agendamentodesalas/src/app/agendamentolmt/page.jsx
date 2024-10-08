@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
 
+
 export default function Form() {
   return (
     <div>
@@ -26,15 +27,18 @@ export default function Form() {
         <h3>LABORATÓRIO DE MIDIAS E TECNOLOGIAS</h3>
       </section>
 
-      <form className="disposicaoFormEquip">
+      <br />
+
+      <form className="disposicaoFormSalas">
         <label>
           Nome do professor:
           <br/>
           <input type="text" name="name" />
         </label>
+        <br />
 
-        <h2>Disciplina:</h2>
-        <select 
+        <label>Disciplina:</label>
+        <select
         // value={disciplina} onChange={handleChange}
         >
           <option>Arte</option>
@@ -53,16 +57,22 @@ export default function Form() {
           <option>Trilha de produção de texto</option>
           <option>Mentoria para o futuro</option>
         </select>
+        <br />
 
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
+        <br />
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
+<<<<<<< HEAD
 
+=======
+        <br />
+>>>>>>> 44c0dc8fc3f6f0b2de5ffc36e02e4859fcbfe2e0
 
         <label>Turma:</label>
-        <select 
+        <select
         // value={turma} onChange={handleChange}
         >
           <option>1º Ano - Fundamental I</option>
@@ -83,6 +93,8 @@ export default function Form() {
           <option>2º Ano - Ensino Médio</option>
           <option>3º Ano - Ensino Médio</option>
         </select>
+      <br />
+
         {/* BOTAO SUBMIT */}
         <section>
           <br/>

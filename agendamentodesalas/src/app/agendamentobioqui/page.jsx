@@ -25,15 +25,21 @@ export default function Form() {
       <section className="tituloGeral">
         <h3>LABORATÓRIO DE BIOLOGIA E QUÍMICA</h3>
       </section>
+      <br />
 
-      <form className="disposicaoFormEquip">
+      <form className="disposicaoFormSalas">
         <label>
+<<<<<<< HEAD
           Nome do professor:
           <br/>
+=======
+          Nome do professor: </label>
+>>>>>>> 44c0dc8fc3f6f0b2de5ffc36e02e4859fcbfe2e0
           <input type="text" name="name" />
-        </label>
+       
+        <br />
 
-        <h2>Disciplina:</h2>
+        <label>Disciplina:</label>
         <select
         // value={disciplina} onChange={handleChange}
         >
@@ -53,12 +59,19 @@ export default function Form() {
           <option>Trilha de produção de texto</option>
           <option>Mentoria para o futuro</option>
         </select>
+        <br />
+
 
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
+        <br />
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
+<<<<<<< HEAD
+=======
+        <br />
+>>>>>>> 44c0dc8fc3f6f0b2de5ffc36e02e4859fcbfe2e0
 
         <label>Turma:</label>
         <select
@@ -82,6 +95,8 @@ export default function Form() {
           <option>2º Ano - Ensino Médio</option>
           <option>3º Ano - Ensino Médio</option>
         </select>
+      <br />
+
         {/* BOTAO SUBMIT */}
         <section>
           <button className="botaoForm">

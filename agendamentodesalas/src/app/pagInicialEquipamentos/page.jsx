@@ -64,7 +64,7 @@ function Corpo2() {
         <Card
           image={legoFundII}
           alt="legoFundII"
-          title="MALETA LEFO - FUNDAMENTAL II"
+          title="MALETA LEGO - FUNDAMENTAL II"
           width={240}
           height={177}
           link="/agendamentomaletafunddois"
