@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Card from "@/components/cards";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import Head from "next/head";
 
 import lmt from "../public/lmt.jpeg";
 import maker from "../public/salamaker.jpeg";
@@ -10,9 +11,11 @@ import labfisica from "../public/labfisica.jpeg";
 import labquibio from "../public/labquibio.jpeg";
 import senai from "../public/salasenai.jpeg";
 
+
 export default function Corpo() {
   return (
     <div>
+    
       {/* HEADER */}
       <Header />
 
