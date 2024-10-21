@@ -117,7 +117,7 @@ function agendaMaletaUm() {
         <br/>
 
         <div>
-          <label>Quantidade:</label>
+          <label>Quantidade de equipamentos:</label>
           <br />
           <input type="number" name="quantidade" />
         </div>
