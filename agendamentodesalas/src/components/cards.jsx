@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from '../app/'
+
 
 export default function Card(props) {
   return (

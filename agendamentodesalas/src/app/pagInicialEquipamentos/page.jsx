@@ -1,6 +1,7 @@
 import Card from "@/components/cards";
 import Header from "@/components/header";
 import Link from "next/link";
+import styles from './page.module.css'
 
 import lim from "@/public/lim.jpeg";
 import compSenai from "@/public/computadorsenai.jpeg";
@@ -15,13 +16,13 @@ function Corpo2() {
     <div>
       <Header />
 
-      <section className="disposicaoNav">
-        <div className="salaNav">
-          <Link href="/">SALAS</Link>
+      <section className={styles.disposicaoNav}>
+        <div className={styles.salaNav}>
+          <Link href="/pagInicialSalas"  className={styles.Link}>SALAS</Link>
         </div>
 
-        <div className="equipNav">
-          <Link href="./pagInicialEquipamentos">EQUIPAMENTOS</Link>
+        <div className={styles.equipNav}>
+          <Link href="./pagInicialEquipamentos"  className={styles.Link}>EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -29,11 +30,11 @@ function Corpo2() {
       <br />
       <br />
 
-      <section className="tituloGeral">
+      <section className={styles.tituloGeral}>
         <h3>Faça seu agendamento aqui</h3>
       </section>
 
-      <section className="disposicaoCards">
+      <section className={styles.disposicaoCards}>
         <Card
           image={lim}
           alt="lim"
@@ -91,9 +92,9 @@ function Corpo2() {
 
       <br />
 
-      <section className="disposicaoBotao">
+      <section className={styles.disposicaoBotao}>
         <button className="visuBotao">
-          <Link href="/visualizacaoagendamentos" className="visuButtonLink">
+          <Link href="/visualizacaoagendamentos" className={styles.visuButtonLink}>
             Visualizar agendamentos realizados
           </Link>
         </button>
