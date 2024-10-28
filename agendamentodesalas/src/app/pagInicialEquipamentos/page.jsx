@@ -93,7 +93,7 @@ function Corpo2() {
       <br />
 
       <section className={styles.disposicaoBotao}>
-        <button className="visuBotao">
+        <button className={styles.visuBotao}>
           <Link href="/visualizacaoagendamentos" className={styles.visuButtonLink}>
             Visualizar agendamentos realizados
           </Link>

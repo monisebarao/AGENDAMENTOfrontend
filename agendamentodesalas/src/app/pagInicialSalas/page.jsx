@@ -98,7 +98,7 @@ export default function Corpo() {
 
       {/* BOTAO VISUALIZAÇÃO DOS AGENDAMENTOS REALIZADOS */}
       <section className={styles.disposicaoBotao}>
-        <button className="visuBotao"><Link href="/visualizacaoagendamentos" className={styles.visuButtonLink}>Visualizar agendamentos realizados</Link></button>
+        <button className={styles.visuBotao}><Link href="/visualizacaoagendamentos" className={styles.visuButtonLink}>Visualizar agendamentos realizados</Link></button>
       </section>
 
       <br />
