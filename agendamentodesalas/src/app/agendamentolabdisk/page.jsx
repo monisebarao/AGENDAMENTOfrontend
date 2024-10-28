@@ -53,6 +53,7 @@ function agendaLabdisk() {
           // value={disciplina}
           // onChange={handleChange}
           >
+            <option></option>
             <option>Arte</option>
             <option>Biologia/Ciência da Natureza</option>
             <option>Educação Física</option>
@@ -64,6 +65,8 @@ function agendaLabdisk() {
             <option>Língua Portuguesa</option>
             <option>Matemática </option>
             <option>Programação e Robótica</option>
+            <option>Tópicos Avançados</option>
+            <option>Trilha de Produção de Texto</option>
           </select>
         </div>
         <br />
@@ -86,21 +89,22 @@ function agendaLabdisk() {
           <label>Turma:</label>
           <br />
           <select>
-          <option>Arte</option>
-          <option>Biologia/Ciência da Natureza</option>
-          <option>Educação Física</option>
-          <option>Eixo Integrador Interáreas</option>
-          <option>Física</option>
-          <option>Geografia</option>
-          <option>História</option>
-          <option>Língua Inglesa</option>
-          <option>Língua Portuguesa</option>
-          <option>Matemática </option>
-          <option>Mentoria para o futuro</option>
-          <option>Mundo do trabalho e empreendedorismo</option>
-          <option>Programação e Robótica</option>
-          <option>Tópicos Avançados</option>
-          <option>Trilha de produção de texto</option>  
+          <option></option>
+            <option>Arte</option>
+            <option>Biologia/Ciência da Natureza</option>
+            <option>Educação Física</option>
+            <option>Eixo Integrador Interáreas</option>
+            <option>Física</option>
+            <option>Geografia</option>
+            <option>História</option>
+            <option>Língua Inglesa</option>
+            <option>Língua Portuguesa</option>
+            <option>Matemática </option>
+            <option>Mentoria para o futuro</option>
+            <option>Mundo do trabalho e empreendedorismo</option>
+            <option>Programação e Robótica</option>
+            <option>Tópicos Avançados</option>
+            <option>Trilha de produção de texto</option>
           </select>
         </div>
         <br />

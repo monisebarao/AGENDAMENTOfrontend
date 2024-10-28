@@ -54,21 +54,22 @@ function agendaLim() {
           // value={disciplina}
           // onChange={handleChange}
           >
+            <option></option>
             <option>Arte</option>
-          <option>Biologia/Ciência da Natureza</option>
-          <option>Educação Física</option>
-          <option>Eixo Integrador Interáreas</option>
-          <option>Física</option>
-          <option>Geografia</option>
-          <option>História</option>
-          <option>Língua Inglesa</option>
-          <option>Língua Portuguesa</option>
-          <option>Matemática </option>
-          <option>Mentoria para o futuro</option>
-          <option>Mundo do trabalho e empreendedorismo</option>
-          <option>Programação e Robótica</option>
-          <option>Tópicos Avançados</option>
-          <option>Trilha de produção de texto</option>  
+            <option>Biologia/Ciência da Natureza</option>
+            <option>Educação Física</option>
+            <option>Eixo Integrador Interáreas</option>
+            <option>Física</option>
+            <option>Geografia</option>
+            <option>História</option>
+            <option>Língua Inglesa</option>
+            <option>Língua Portuguesa</option>
+            <option>Matemática </option>
+            <option>Mentoria para o futuro</option>
+            <option>Mundo do trabalho e empreendedorismo</option>
+            <option>Programação e Robótica</option>
+            <option>Tópicos Avançados</option>
+            <option>Trilha de Produção de Texto</option>
           </select>
         </div>
         <br />
@@ -91,6 +92,7 @@ function agendaLim() {
           <label>Turma:</label>
           <br />
           <select>
+          <option></option>
             <option>1º Ano - Fundamental I</option>
             <option>2º Ano - Fundamental I</option>
             <option>3º Ano - Fundamental I</option>
