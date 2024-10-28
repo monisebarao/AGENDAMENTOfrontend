@@ -18,7 +18,7 @@ export default function Login() {
       </h3>
 
         <form className="form">
-          <label>Insira seu NIF:</label>
+          <label>Insira seu e-mail:</label>
           <br />
           <input type="text" required/>
           <br />
