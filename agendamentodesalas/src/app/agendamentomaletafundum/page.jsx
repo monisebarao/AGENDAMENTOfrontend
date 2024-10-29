@@ -3,31 +3,28 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Link from "next/link";
+import styles from '@/app/pagInicialEquipamentos/page.module.css'
+
 
 function agendaMaletaUm() {
-  //     const [disciplina, setDisciplina] = useState("");
-
-  //   const handleChange = (event) => {
-  //     setDisciplina(event.target.value);
-  //   };
 
   return (
     <div>
       <Header />
 
-      <section className="disposicaoNav">
-        <div className="salaNav">
-          <Link href="/">SALAS</Link>
+      <section className={styles.disposicaoNav}>
+        <div className={styles.salaNav}>
+          <Link href="/pagInicialSalas" className={styles.Link}>SALAS</Link>
         </div>
 
-        <div className="equipNav">
-          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
+        <div className={styles.equipNav}>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>EQUIPAMENTOS</Link>
         </div>
       </section>
       <br />
 
       {/* TITULO */}
-      <section className="tituloGeral">
+      <section className={styles.tituloGeral}>
         <h3>MALETAS LEGO - FUNDAMENTAL I</h3>
       </section>
 
@@ -37,7 +34,7 @@ function agendaMaletaUm() {
 
       <form
         //  action=""
-        className="disposicaoFormEquip"
+        className={styles.disposicaoFormEquip}
       >
         <div>
           <label>Nome do(a) professor(a) responsável:</label>
@@ -126,8 +123,8 @@ function agendaMaletaUm() {
 
         {/* BOTAO SUBMIT */}
         <section>
-          <button className="botaoForm">
-            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
+          <button className={styles.botaoForm}>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>

@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import styles from '@/app/pagInicialEquipamentos/page.module.css'
 
 export default function Form() {
   return (
@@ -8,13 +9,13 @@ export default function Form() {
       <Header />
 
       {/* NAVEGAÇÃO */}
-      <section className="disposicaoNav">
-        <div className="salaNav">
-          <Link href="/">SALAS</Link>
+      <section className={styles.disposicaoNav}>
+        <div className={styles.salaNav}>
+          <Link href="/pagInicialSalas" className={styles.Link}>SALAS</Link>
         </div>
 
-        <div className="equipNav">
-          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
+        <div className={styles.equipNav}>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -22,11 +23,11 @@ export default function Form() {
       <br />
 
       {/* TITULO PAGINA */}
-      <section className="tituloGeral">
+      <section className={styles.tituloGeral}>
         <h3>BIBLIOTECA</h3>
       </section>
 
-      <form className="disposicaoFormSalas">
+      <form className={styles.disposicaoFormSalas}>
         <label>
           Nome do professor:
           <input type="text" name="name" />
@@ -92,8 +93,8 @@ export default function Form() {
         {/* BOTAO SUBMIT */}
         <br />
         <section>
-          <button className="botaoForm">
-            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
+          <button className={styles.botaoForm}>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>

@@ -39,6 +39,7 @@
 
 .cardButtonLink {
   color: rgb(241, 247, 253);
+  text-decoration: none;
 }
 
 .cardButton:hover {

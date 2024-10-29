@@ -3,6 +3,8 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Link from "next/link";
+import styles from '@/app/pagInicialEquipamentos/page.module.css'
+
 
 function agendaLabdisk() {
   //     const [disciplina, setDisciplina] = useState("");
@@ -15,19 +17,19 @@ function agendaLabdisk() {
     <div>
       <Header />
 
-      <section className="disposicaoNav">
-        <div className="salaNav">
-          <Link href="/">SALAS</Link>
+      <section className={styles.disposicaoNav}>
+        <div className={styles.salaNav}>
+          <Link href="/pagInicialSalas" className={styles.Link}>SALAS</Link>
         </div>
 
-        <div className="equipNav">
-          <Link href="/">EQUIPAMENTOS</Link>
+        <div className={styles.equipNav}>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>EQUIPAMENTOS</Link>
         </div>
       </section>
       <br />
 
       {/* TITULO */}
-      <section className="tituloGeral">
+      <section className={styles.tituloGeral}>
         <h3>LABDISKS</h3>
       </section>
 
@@ -37,7 +39,7 @@ function agendaLabdisk() {
 
       <form
         //  action=""
-        className="disposicaoFormEquip"
+        className={styles.disposicaoFormEquip}
       >
         <div>
           <label>Nome do(a) professor(a) responsável:</label>
@@ -122,8 +124,8 @@ function agendaLabdisk() {
 
         {/* BOTAO SUBMIT */}
         <section>
-          <button className="botaoForm">
-            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
+          <button className={styles.botaoForm}>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>
@@ -132,8 +134,5 @@ function agendaLabdisk() {
     </div>
   );
 }
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<formEquip/>);
 
 export default agendaLabdisk;
