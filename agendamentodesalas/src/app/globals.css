@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+
 }
 
 
@@ -8,13 +9,14 @@
   background-image: url('../public/fundoLogin.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   color: #ffffff;
+  height: 100%;
+
 
 }
 
 .bemVindos {
-  margin-top: 1%;
+  margin-top: 5%;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
   text-shadow: 1px 1px rgb(159, 0, 0);
@@ -90,6 +92,7 @@
 @media screen and (min-width: 320px) and (max-width: 400px){
   .bemVindos{
     font-size: xx-large;
+    /* margin-top: 60%; */
   }
 
   .saudacao{
