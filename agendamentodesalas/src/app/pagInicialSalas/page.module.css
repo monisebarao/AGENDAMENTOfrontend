@@ -39,6 +39,7 @@
 
 .cardButtonLink {
   color: rgb(241, 247, 253);
+  text-decoration: none;
 }
 
 .cardButton:hover {
@@ -169,7 +170,7 @@
 }
 
 .disposicaoFormEquip button {
-  margin-left: 3%;
+  margin-left: 10%;
 }
 
 .disposicaoFormSalas {

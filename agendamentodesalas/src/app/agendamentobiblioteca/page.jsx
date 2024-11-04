@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import styles from '@/app/pagInicialEquipamentos/page.module.css'
 
 export default function Form() {
   return (
@@ -8,13 +9,13 @@ export default function Form() {
       <Header />
 
       {/* NAVEGAÇÃO */}
-      <section className="disposicaoNav">
-        <div className="salaNav">
-          <Link href="/">SALAS</Link>
+      <section className={styles.disposicaoNav}>
+        <div className={styles.salaNav}>
+          <Link href="/pagInicialSalas" className={styles.Link}>SALAS</Link>
         </div>
 
-        <div className="equipNav">
-          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
+        <div className={styles.equipNav}>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>EQUIPAMENTOS</Link>
         </div>
       </section>
 
@@ -22,21 +23,23 @@ export default function Form() {
       <br />
 
       {/* TITULO PAGINA */}
-      <section className="tituloGeral">
+      <section className={styles.tituloGeral}>
         <h3>BIBLIOTECA</h3>
       </section>
 
-      <form className="disposicaoFormEquip">
+      <form className={styles.disposicaoFormSalas}>
         <label>
           Nome do professor:
           <br/>
           <input type="text" name="name" />
         </label>
+        <br />
 
-        <h2>Disciplina:</h2>
+        <label>Disciplina:</label>
         <select
         // value={disciplina} onChange={handleChange}
         >
+          <option></option>
           <option>Arte</option>
           <option>Biologia/Ciência da Natureza</option>
           <option>Educação Física</option>
@@ -47,23 +50,38 @@ export default function Form() {
           <option>Língua Inglesa</option>
           <option>Língua Portuguesa</option>
           <option>Matemática </option>
+          <option>Mentoria para o futuro</option>
+          <option>Mundo do trabalho e empreendedorismo</option>
           <option>Programação e Robótica</option>
+<<<<<<< HEAD
           <option>Tópicos avançados</option>
           <option>Mundo do trabalho e empreendedorismo</option>
           <option>Trilha de produção de texto</option>
           <option>Mentoria para o futuro</option>
+=======
+          <option>Tópicos Avançados</option>
+          <option>Trilha de Produção de Texto</option>          
+>>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
         </select>
+        <br />
+
 
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
+        <br />
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
+<<<<<<< HEAD
+=======
+        <br />
+>>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
 
         <label>Turma:</label>
         <select
         //  value={turma} onChange={handleChange}
         >
+          <option></option>
           <option>1º Ano - Fundamental I</option>
           <option>2º Ano - Fundamental I</option>
           <option>3º Ano - Fundamental I</option>
@@ -82,12 +100,12 @@ export default function Form() {
           <option>2º Ano - Ensino Médio</option>
           <option>3º Ano - Ensino Médio</option>
         </select>
-        
+
         {/* BOTAO SUBMIT */}
         <br />
         <section>
-          <button className="botaoForm">
-            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
+          <button className={styles.botaoForm}>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
           </button>
         </section>
       </form>
