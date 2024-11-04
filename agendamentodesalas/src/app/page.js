@@ -67,7 +67,7 @@ const info = [
   },
 
   {
-    email: " cleide.araujo@portalsesisp.org.br",
+    email: "cleide.araujo@portalsesisp.org.br",
     senha: "01008451",
   },
 
@@ -87,17 +87,17 @@ const info = [
   },
 
   {
-    email: " carla.sandrin@portalsesisp.org.br",
+    email: "carla.sandrin@portalsesisp.org.br",
     senha: "01064422",
   },
 
   {
-    email: " paloma.pereira3@portalsesisp.org.br",
+    email: "paloma.pereira3@portalsesisp.org.br",
     senha: "01054664",
   },
 
   {
-    email: " agda.souza@portalsesisp.org.br",
+    email: "agda.souza@portalsesisp.org.br",
     senha: "01065778",
   },
 
