@@ -37,7 +37,8 @@ export default function Form() {
           <br/>
           <input type="text" name="name" />
         </label>
-        <br />
+<br/>
+<br />
 
         <label>Disciplina:</label>
         <select

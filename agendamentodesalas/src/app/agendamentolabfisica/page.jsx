@@ -1,8 +1,7 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
-import styles from '@/app/pagInicialEquipamentos/page.module.css'
-
+import styles from "@/app/pagInicialEquipamentos/page.module.css";
 
 export default function Form() {
   return (
@@ -12,11 +11,15 @@ export default function Form() {
       {/* NAVEGAÇÃO */}
       <section className={styles.disposicaoNav}>
         <div className={styles.salaNav}>
-          <Link href="/pagInicialSalas" className={styles.Link}>SALAS</Link>
+          <Link href="/pagInicialSalas" className={styles.Link}>
+            SALAS
+          </Link>
         </div>
 
         <div className={styles.equipNav}>
-          <Link href="/pagInicialEquipamentos" className={styles.Link}>EQUIPAMENTOS</Link>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>
+            EQUIPAMENTOS
+          </Link>
         </div>
       </section>
 
@@ -33,13 +36,14 @@ export default function Form() {
       <form className={styles.disposicaoFormSalas}>
         <label>
           Nome do professor:
-          <br/>
+          <br />
           <input type="text" name="name" />
         </label>
         <br />
+        <br />
 
         <label>Disciplina:</label>
-        <select 
+        <select
         // value={disciplina} onChange={handleChange}
         >
           <option></option>
@@ -62,11 +66,9 @@ export default function Form() {
           <option>Trilha de produção de texto</option>
           <option>Mentoria para o futuro</option>
           <option></option>
-
         </select>
         <br />
-    
-    
+
         <label for="appt">Horário de inicio:</label>
         <input type="time" id="appt" name="appt"></input>
         <br />
@@ -75,9 +77,8 @@ export default function Form() {
         <input type="time" id="appt" name="appt"></input>
         <br />
 
-
         <label>Turma:</label>
-        <select 
+        <select
         // value={turma} onChange={handleChange}
         >
           <option></option>
@@ -99,12 +100,14 @@ export default function Form() {
           <option>2º Ano - Ensino Médio</option>
           <option>3º Ano - Ensino Médio</option>
         </select>
-      <br />
+        <br />
 
         {/* BOTAO SUBMIT */}
         <section>
           <button className={styles.botaoForm}>
-            <Link href="/visualizacaoagendamentos"  className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>
+              REALIZAR AGENDAMENTO
+            </Link>
           </button>
         </section>
       </form>

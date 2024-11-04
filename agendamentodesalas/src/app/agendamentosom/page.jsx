@@ -47,6 +47,7 @@ function agendaSom() {
           <input type="text" name="nomeProf" />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Disciplina:</label>
@@ -76,6 +77,7 @@ function agendaSom() {
           </select>
         </div>
         <br />
+        <br />
 
         <div>
           <label>Horário de início:</label>
@@ -83,12 +85,14 @@ function agendaSom() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Horário de término:</label>
           <br />
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
+        <br />
         <br />
 
         <div>
@@ -115,6 +119,7 @@ function agendaSom() {
             <option>3º Ano - Ensino Médio</option>
           </select>
         </div>
+        <br />
         <br />
 
         <div>

@@ -3,8 +3,7 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Link from "next/link";
-import styles from '@/app/pagInicialEquipamentos/page.module.css'
-
+import styles from "@/app/pagInicialEquipamentos/page.module.css";
 
 function agendaComputadorSenai() {
   //     const [disciplina, setDisciplina] = useState("");
@@ -19,11 +18,15 @@ function agendaComputadorSenai() {
 
       <section className={styles.disposicaoNav}>
         <div className={styles.salaNav}>
-          <Link href="/pagInicialSalas"  className={styles.Link}>SALAS</Link>
+          <Link href="/pagInicialSalas" className={styles.Link}>
+            SALAS
+          </Link>
         </div>
 
         <div className={styles.equipNav}>
-          <Link href="/pagInicialEquipamentos"  className={styles.Link}>EQUIPAMENTOS </Link>
+          <Link href="/pagInicialEquipamentos" className={styles.Link}>
+            EQUIPAMENTOS{" "}
+          </Link>
         </div>
       </section>
       <br />
@@ -47,6 +50,7 @@ function agendaComputadorSenai() {
           <br />
           <input type="text" name="nomeProf" />
         </div>
+        <br />
         <br />
 
         <div>
@@ -74,9 +78,9 @@ function agendaComputadorSenai() {
             <option>Mundo do trabalho e empreendedorismo</option>
             <option>Trilha de produção de texto</option>
             <option>Mentoria para o futuro</option>
-
           </select>
         </div>
+        <br />
         <br />
 
         <div>
@@ -85,6 +89,7 @@ function agendaComputadorSenai() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Horário de término:</label>
@@ -92,12 +97,13 @@ function agendaComputadorSenai() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Turma:</label>
           <br />
           <select>
-          <option></option>
+            <option></option>
             <option>1º Ano - Fundamental I</option>
             <option>2º Ano - Fundamental I</option>
             <option>3º Ano - Fundamental I</option>
@@ -118,6 +124,7 @@ function agendaComputadorSenai() {
           </select>
         </div>
         <br />
+        <br />
 
         <div>
           <label>Quantidade:</label>
@@ -133,7 +140,9 @@ function agendaComputadorSenai() {
         {/* BOTAO SUBMIT */}
         <section>
           <button className={styles.botaoForm}>
-            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>
+              REALIZAR AGENDAMENTO
+            </Link>
           </button>
         </section>
       </form>

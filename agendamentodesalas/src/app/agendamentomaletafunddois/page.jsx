@@ -43,6 +43,7 @@ function agendaMaletaDois() {
           <input type="text" name="nomeProf" />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Disciplina:</label>
@@ -73,6 +74,7 @@ function agendaMaletaDois() {
           </select>
         </div>
         <br />
+        <br />
 
         <div>
           <label>Horário de início:</label>
@@ -80,12 +82,14 @@ function agendaMaletaDois() {
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
         <br />
+        <br />
 
         <div>
           <label>Horário de término:</label>
           <br />
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
+        <br />
         <br />
 
         <div>
@@ -112,6 +116,7 @@ function agendaMaletaDois() {
             <option>3º Ano - Ensino Médio</option>
           </select>
         </div>
+        <br />
         <br />
 
         <div>
