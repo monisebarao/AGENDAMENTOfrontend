@@ -67,8 +67,15 @@ function agendaLabdisk() {
             <option>Língua Portuguesa</option>
             <option>Matemática </option>
             <option>Programação e Robótica</option>
+<<<<<<< HEAD
+            <option>Tópicos avançados</option>
+            <option>Mundo do trabalho e empreendedorismo</option>
+            <option>Trilha de produção de texto</option>
+            <option>Mentoria para o futuro</option>
+=======
             <option>Tópicos Avançados</option>
             <option>Trilha de Produção de Texto</option>
+>>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
           </select>
         </div>
         <br />
