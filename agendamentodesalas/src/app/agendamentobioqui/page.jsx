@@ -29,18 +29,10 @@ export default function Form() {
       </section>
       <br />
 
-<<<<<<< HEAD
-      <form className="disposicaoFormEquip">
-        <label>
-          Nome do professor:
-          <br/>
-          <input type="text" name="name" />
-        </label>
-=======
       <form className={styles.disposicaoFormSalas}>
         <label>Nome do professor: </label>
         <input type="text" name="name" />
->>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
+
 
         <br />
 
@@ -63,15 +55,10 @@ export default function Form() {
           <option>Mentoria para o futuro</option>
           <option>Mundo do trabalho e empreendedorismo</option>
           <option>Programação e Robótica</option>
-<<<<<<< HEAD
           <option>Tópicos avançados</option>
           <option>Mundo do trabalho e empreendedorismo</option>
           <option>Trilha de produção de texto</option>
           <option>Mentoria para o futuro</option>
-=======
-          <option>Tópicos Avançados</option>
-          <option>Trilha de Produção de Texto</option>
->>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
         </select>
         <br />
 
@@ -81,10 +68,8 @@ export default function Form() {
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
-<<<<<<< HEAD
-=======
+        
         <br />
->>>>>>> 36be55970995b3752e5b1f172dec60f2f18db5f4
 
         <label>Turma:</label>
         <select
