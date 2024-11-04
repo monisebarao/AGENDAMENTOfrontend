@@ -10,11 +10,11 @@ export default function Form() {
       {/* NAVEGAÇÃO */}
       <section className="disposicaoNav">
         <div className="salaNav">
-          <a href="./">SALAS</a>
+          <a href="/">SALAS</a>
         </div>
 
         <div className="equipNav">
-          <Link href="/pagInicialEquipamentos/page.jsx">EQUIPAMENTOS</Link>
+          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
         </div>
       </section>
 

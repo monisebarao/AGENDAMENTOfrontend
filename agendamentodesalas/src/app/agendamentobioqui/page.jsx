@@ -10,7 +10,7 @@ export default function Form() {
       {/* NAVEGAÇÃO */}
       <section className="disposicaoNav">
         <div className="salaNav">
-          <Link href="/">SALAS</Link>
+          <a href="/">SALAS</a>
         </div>
 
         <div className="equipNav">
@@ -20,11 +20,14 @@ export default function Form() {
 
       <br />
       <br />
+      <br />
+
 
       {/* TITULO PAGINA */}
       <section className="tituloGeral">
         <h3>LABORATÓRIO DE BIOLOGIA E QUÍMICA</h3>
       </section>
+
       <br />
 
       <form className="disposicaoFormSalas">
@@ -34,7 +37,7 @@ export default function Form() {
           <input type="text" name="nomeProf" />
         </div>
         <br />
-        <br/>
+        <br />
 
         <div>
           <label>Disciplina:</label>
@@ -57,11 +60,11 @@ export default function Form() {
             <option>Trilha de produção de texto</option>
             <option>Mentoria para o futuro</option>
           </select>
-          </div>
-          <br />
-          <br/>
-          
-          <div>
+        </div>
+        <br />
+        <br />
+
+        <div>
           <label>Horário de início:</label>
           <br />
           <input type="time" name="horário" min="07:00" max="18:00" required />
@@ -75,41 +78,41 @@ export default function Form() {
           <br />
           <input type="time" name="horário" min="07:00" max="18:00" required />
         </div>
-        
-        <br/>
-        <br/>
 
-          <label>Turma:</label>
-          <select
-          // value={turma} onChange={handleChange}
-          >
-            <option>1º Ano - Fundamental I</option>
-            <option>2º Ano - Fundamental I</option>
-            <option>3º Ano - Fundamental I</option>
-            <option>4º Ano - Fundamental I</option>
-            <option>5º Ano - Fundamental I</option>
-            <option>6º Ano A - Fundamental II</option>
-            <option>6º Ano B - Fundamental II</option>
-            <option>7º Ano A - Fundamental II</option>
-            <option>7º Ano B - Fundamental II</option>
-            <option>8º Ano A - Fundamental II</option>
-            <option>8º Ano B - Fundamental II</option>
-            <option>9º Ano A - Fundamental II</option>
-            <option>9º Ano B - Fundamental II</option>
-            <option>1º Ano A - Ensino Médio</option>
-            <option>1º Ano B - Ensino Médio</option>
-            <option>2º Ano - Ensino Médio</option>
-            <option>3º Ano - Ensino Médio</option>
-          </select>
-          <br />
+        <br />
+        <br />
 
-          {/* BOTAO SUBMIT */}
-          <section>
-            <br/>
-            <button className="botaoForm">
-              <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
-            </button>
-          </section>
+        <label>Turma:</label>
+        <select
+        // value={turma} onChange={handleChange}
+        >
+          <option>1º Ano - Fundamental I</option>
+          <option>2º Ano - Fundamental I</option>
+          <option>3º Ano - Fundamental I</option>
+          <option>4º Ano - Fundamental I</option>
+          <option>5º Ano - Fundamental I</option>
+          <option>6º Ano A - Fundamental II</option>
+          <option>6º Ano B - Fundamental II</option>
+          <option>7º Ano A - Fundamental II</option>
+          <option>7º Ano B - Fundamental II</option>
+          <option>8º Ano A - Fundamental II</option>
+          <option>8º Ano B - Fundamental II</option>
+          <option>9º Ano A - Fundamental II</option>
+          <option>9º Ano B - Fundamental II</option>
+          <option>1º Ano A - Ensino Médio</option>
+          <option>1º Ano B - Ensino Médio</option>
+          <option>2º Ano - Ensino Médio</option>
+          <option>3º Ano - Ensino Médio</option>
+        </select>
+        <br />
+
+        {/* BOTAO SUBMIT */}
+        <section>
+          <br/>
+          <button className="botaoForm">
+            <Link href="/visualizacaoagendamentos">REALIZAR AGENDAMENTO</Link>
+          </button>
+        </section>
       </form>
 
       <Footer />

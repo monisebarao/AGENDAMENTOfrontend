@@ -21,7 +21,7 @@ function agendaLabdisk() {
         </div>
 
         <div className="equipNav">
-          <Link href="/">EQUIPAMENTOS</Link>
+          <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
         </div>
       </section>
       <br />
