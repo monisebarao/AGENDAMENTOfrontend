@@ -196,7 +196,7 @@ const Login = () => {
         </h3>
 
         <form className="form" onSubmit={handleEntrar}>
-          <label>Insira seu e-mail:</label>
+          <label className="formLabel">Insira seu e-mail:</label>
           <br />
           <input
             type="text"
@@ -204,10 +204,11 @@ const Login = () => {
             id="emailprofs"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="formInput"
           />
           <br />
           <br />
-          <label>Insira sua senha:</label>
+          <label className="formLabel">Insira sua senha:</label>
           <br />
           <input
             type="password"
@@ -215,6 +216,7 @@ const Login = () => {
             id="senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
+            className="formInput"
           />
           
           <br />
@@ -223,7 +225,7 @@ const Login = () => {
           <br />
           <br />
 
-          <button type="submit">Entrar</button>
+          <button type="submit" className="formBotao">Entrar</button>
         </form>
       </div>
     </div>

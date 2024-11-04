@@ -33,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   
+  
 }
 
 .form{
@@ -40,11 +41,11 @@
   margin: auto;
 }
 
-.form label{
+.formLabel{
   font-size: large;
 }
 
-.form input{
+.formInput{
   font-size: 1rem;
   width: 100%;
   padding: 5%;
@@ -58,7 +59,7 @@
   color: #ffffff;
 }
 
-.form input:focus{
+.formInput:focus{
   color: #AA1D01;
 }
 
@@ -67,7 +68,7 @@
   color: #ffffff;
 }
 
-.form button{
+.formBotao{
   background-color: #f82900;
   font-size: 1.2rem;
   font-weight: 700;
