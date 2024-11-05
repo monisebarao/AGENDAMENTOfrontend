@@ -54,7 +54,7 @@ export default function Form() {
 
 <form className="disposicaoFormSalas">
   <div>
-    <label>Nome do(a) professor(a):</label>
+    <label>E-mail do professor:</label>
     <br />
     <input type="text" name="nomeProf" />
   </div>
