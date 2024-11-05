@@ -33,15 +33,15 @@ export default function Form() {
 <div>
 
 {/* NAVEGAÇÃO */}
-<section className= {styless.disposicaoNav}>
-  <div className= {styless.salaNav}>
-    <Link href="/pagInicialSalas">SALAS</Link>
-  </div>
+<section className={styless.disposicaoNav}>
+        <div className={styless.salaNav}>
+          <Link href="/pagInicialSalas"  className={styless.Link}>SALAS</Link>
+        </div>
 
-  <div className={styless.equipNav}>
-    <Link href="/pagInicialEquipamentos">EQUIPAMENTOS</Link>
-  </div>
-</section>
+        <div className={styless.equipNav}>
+          <Link href='/pagInicialEquipamentos' className={styless.Link}>EQUIPAMENTOS</Link>
+        </div>
+      </section>
 
 <br />
 <br />
@@ -70,13 +70,14 @@ export default function Form() {
 <br />
 <br />
 
-{/* BOTAO SUBMIT
+{/* BOTAO SUBMIT */}
 <section>
   <br/>
   <button className="botaoForm">
     <Link href="/">REALIZAR CADASTRO</Link>
   </button>
-</section> */}
+</section>
+
 </form>
 <Footer />
 </div>
