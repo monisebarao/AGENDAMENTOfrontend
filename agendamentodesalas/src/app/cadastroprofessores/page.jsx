@@ -73,7 +73,7 @@ export default function Form() {
           <section>
             <br />
             <button className={styles.dropbtn2}>
-              <Link className={styles.texto} href="/">Realizar Cadastro</Link>
+              <Link className={styles.texto} href="/pagInicialSalas">Realizar Cadastro</Link>
             </button>
           </section>
 
