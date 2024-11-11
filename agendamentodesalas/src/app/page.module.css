@@ -400,14 +400,14 @@
 }
 
 .texto{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .dropbtn2 {
-  border-color: black;
-  color: #f1f1f1;
-  padding: 5px;
+  border-color: #C52C0E;
+  background-color: #C52C0E;
+  padding: 10px;
   font-size: 15px;
   margin-top: 5%;
   border-radius: 8px;
