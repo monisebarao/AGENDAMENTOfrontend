@@ -335,8 +335,6 @@
   font-size: 1em
 }
 
-<<<<<<< HEAD
-=======
 /* CADASTRO PROFESSORES */
 .dropdowncontent {
   display: none;
@@ -416,7 +414,7 @@
   border-radius: 8px;
   width: 100%;
 }
->>>>>>> 6535886b4561f6afb43da19d3832c2828e735f4d
+
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .tituloPrincipal {
