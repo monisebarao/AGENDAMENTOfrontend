@@ -75,6 +75,10 @@ function agendaMaletaUm() {
         <br />
         <br />
 
+        <label for='data'>Data:</label>
+        <input type="date" id='data' name='data'></input>
+        <br/>
+
         <div>
           <label>Horário de início:</label>
           <br />
