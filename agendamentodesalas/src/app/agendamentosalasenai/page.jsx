@@ -34,11 +34,11 @@ export default function Form() {
       <form className={styles.disposicaoFormSalas}>
         <label>
           Nome do professor:
-          <br/>
+          <br />
           <input type="text" name="name" />
         </label>
-<br/>
-<br />
+        <br />
+        <br />
 
         <label>Disciplina:</label>
         <select
@@ -72,6 +72,7 @@ export default function Form() {
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
 
+<br/>
         <label>Turma:</label>
         <select
         // value={turma} onChange={handleChange}
@@ -99,8 +100,12 @@ export default function Form() {
 
         {/* BOTAO SUBMIT */}
         <section>
+
+          <br />
+
           <button className={styles.botaoForm}>
             <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+
           </button>
         </section>
       </form>

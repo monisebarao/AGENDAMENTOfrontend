@@ -94,10 +94,14 @@ export default function Form() {
         </select>
 
         {/* BOTAO SUBMIT */}
-        <br />
         <section>
+
+          <br/>
+          <br/>
+
           <button className={styles.botaoForm}>
             <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+
           </button>
         </section>
       </form>

@@ -36,7 +36,7 @@ export default function Form() {
         <label>Nome do professor: </label>
         <input type="text" name="name" />
 
-      
+
         <br />
 
         <label>Disciplina:</label>
@@ -101,10 +101,12 @@ export default function Form() {
 
         {/* BOTAO SUBMIT */}
         <section>
+
+          <br />
+
           <button className={styles.botaoForm}>
-            <Link href="/visualizacaoagendamentos" className={styles.Link}>
-              REALIZAR AGENDAMENTO
-            </Link>
+            <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+
           </button>
         </section>
       </form>

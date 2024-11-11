@@ -11,7 +11,8 @@ export default function Header() {
         <div className={styles.linha}>
           <Image className={styles.logo} src={Logo} width={103} height={60} />
           <section className={styles.Botaoprof}>
-            <button className={styles.visubotaoprof}><Link href="/cadastroprofessores" className={styles.visuprofLink}>Cadastro Professores</Link></button>
+            <button className={styles.visubotaoprof}>
+              <Link href="/cadastroprofessores" className={styles.visuprofLink}>Cadastrar Professor</Link></button>
           </section>
         </div>
       </div>
