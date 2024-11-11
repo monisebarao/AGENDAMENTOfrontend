@@ -11,8 +11,12 @@ export default function VisualizacaoAgendamentos() {
       <div className={styles.header}>
         <Image className={styles.logo} src={Logo} width={110} height={60} />
         <br />
-        <h2>Agendamentos Realizados</h2>
+        <h2 className={styles.titulo}>Agendamentos Realizados</h2>
       </div>
+      <button className={styles.editar}>
+        <Link className={styles.editar2} href="/pagInicialSalas">
+          EDITAR
+        </Link></button>
       <br />
 
       <div className={styles.disposicaoCardsAgenda}>
