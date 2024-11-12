@@ -35,7 +35,7 @@ export default function Form() {
   }, []);
 
   // Atualizar os valores do formulário
-  const handleChange = (e) => {
+  const   handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -239,8 +239,8 @@ export default function Form() {
           value={formData.cod_sala = 1}
           onChange={handleChange}
           required
-          // hidden
-          // disabled
+          hidden
+          disabled
         />
 
         <br />
