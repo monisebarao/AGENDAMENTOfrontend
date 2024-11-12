@@ -149,8 +149,7 @@ export default function Form() {
           <option>Tópicos avançados</option>
           <option>Trilha de produção de texto</option>
         </select>
-<<<<<<< HEAD
-=======
+
         <br />
 
         <label for='data'>Data:</label>
@@ -163,7 +162,7 @@ export default function Form() {
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
->>>>>>> c53d1b9cc2a44a2bcd6e39f992ee9d4dc65484b5
+
 
         <br />
 
