@@ -1,153 +1,255 @@
 "use client";
 
-import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import styles from "@/app/pagInicialEquipamentos/page.module.css";
+import React, { useEffect, useState } from "react";
 
-function agendaComputadorSenai() {
-  //     const [disciplina, setDisciplina] = useState("");
+export default function Form() {
+  const [professores, setProfessores] = useState([]);
+  const [formData, setFormData] = useState({
+    data_sel1: "",
+    hr_entrada1: "",
+    hr_saida1: "",
+    turma1: "",
+    disciplina1: "",
+    id_prof: "",
+    cod_sala: "",
+  });
 
-  //   const handleChange = (event) => {
-  //     setDisciplina(event.target.value);
-  //   };
+  // Carregar a lista de professores da API quando o componente é montado
+  useEffect(() => {
+    const fetchProfessores = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/professor");
+        if (!response.ok) throw new Error("Erro ao buscar professores");
+
+        const data = await response.json();
+        setProfessores(data);
+      } catch (error) {
+        console.error("Erro ao buscar professores:", error);
+      }
+    };
+    fetchProfessores();
+  }, []);
+
+  // Atualizar os valores do formulário
+  const   handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  // Submeter o formulário
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Verificar os dados do formulário antes de enviar
+    console.log("Dados do formulário antes do envio:", formData);
+
+    try {
+      const response = await fetch("http://localhost:3001/agenda1", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Agendamento realizado com sucesso!");
+        setFormData({
+          data_sel1: "",
+          hr_entrada1: "",
+          hr_saida1: "",
+          turma1: "",
+          disciplina1: "",
+          id_prof: "",
+          cod_sala: 1,
+        });
+      } else {
+        throw new Error("Erro ao realizar agendamento");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar os dados:", error.message);
+      alert("Erro ao realizar agendamento");
+    }
+  };
 
   return (
     <div>
       <Header />
 
+      {/* NAVEGAÇÃO */}
       <section className={styles.disposicaoNav}>
         <div className={styles.salaNav}>
           <Link href="/pagInicialSalas" className={styles.Link}>
             SALAS
           </Link>
         </div>
-
         <div className={styles.equipNav}>
           <Link href="/pagInicialEquipamentos" className={styles.Link}>
-            EQUIPAMENTOS{" "}
+            EQUIPAMENTOS
           </Link>
         </div>
       </section>
+
       <br />
       <br />
 
-      {/* TITULO */}
+      {/* TÍTULO DA PÁGINA */}
       <section className={styles.tituloGeral}>
-        <h3>COMPUTADORES DA SALA DO CURSO TÉCNICO - SALA 1</h3>
+        <h3>COMPUTADORES DA SALA DO CURSO TÉCNICO</h3>
       </section>
 
       <br />
 
-      {/* FORMULARIO */}
+      <form onSubmit={handleSubmit} className={styles.disposicaoFormEquip}>
+        {/* Campo de Seleção de Professor */}
+        <label>Nome do professor:</label>
+        <select
+          name="id_prof"
+          value={formData.id_prof}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Selecione um professor</option>
+          {professores.map((professor) => (
+            <option key={professor.id_prof} value={professor.id_prof}>
+              {professor.nome_prof}
+            </option>
+          ))}
+        </select>
 
-      <form
-        //  action=""
-        className={styles.disposicaoFormEquip}
-      >
-        <div>
-          <label>Nome do(a) professor(a) responsável:</label>
-          <br />
-          <input type="text" name="nomeProf" />
-        </div>
         <br />
         <br />
 
-        <div>
-          <label>Disciplina:</label>
-          <br />
-          <select
-          // value={disciplina}
-          // onChange={handleChange}
-          >
-            <option></option>
-            <option>Arte</option>
-            <option>Biologia/Ciência da Natureza</option>
-            <option>Educação Física</option>
-            <option>Eixo Integrador Interáreas</option>
-            <option>Física</option>
-            <option>Geografia</option>
-            <option>História</option>
-            <option>Língua Inglesa</option>
-            <option>Língua Portuguesa</option>
-            <option>Matemática </option>
-            <option>Mentoria para o futuro</option>
-            <option>Mundo do trabalho e empreendedorismo</option>
-            <option>Programação e Robótica</option>
-            <option>Tópicos avançados</option>
-            <option>Mundo do trabalho e empreendedorismo</option>
-            <option>Trilha de produção de texto</option>
-            <option>Mentoria para o futuro</option>
-          </select>
-        </div>
-        <br />
+        {/* Outros campos do formulário */}
+        <label>Disciplina:</label>
+        <select
+          name="disciplina1"
+          value={formData.disciplina1}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Selecione uma disciplina</option>
+          <option>Arte</option>
+          <option>Biologia/Ciência da Natureza</option>
+          <option>Educação Física</option>
+          <option>Eixo Integrador Interáreas</option>
+          <option>Física</option>
+          <option>Geografia</option>
+          <option>História</option>
+          <option>Língua Inglesa</option>
+          <option>Língua Portuguesa</option>
+          <option>Matemática</option>
+          <option>Mentoria para o futuro</option>
+          <option>Mundo do trabalho e empreendedorismo</option>
+          <option>Programação e Robótica</option>
+          <option>Tópicos avançados</option>
+          <option>Trilha de produção de texto</option>
+        </select>
+
         <br />
 
         <label for='data'>Data:</label>
         <input type="date" id='data' name='data'></input>
         <br/>
 
-
-        <div>
-          <label>Horário de início:</label>
-          <br />
-          <input type="time" name="horário" min="07:00" max="18:00" required />
-        </div>
-        <br />
+        <label for="appt">Horário de início:</label>
+        <input type="time" id="appt" name="appt"></input>
         <br />
 
-        <div>
-          <label>Horário de término:</label>
-          <br />
-          <input type="time" name="horário" min="07:00" max="18:00" required />
-        </div>
-        <br />
-        <br />
+        <label for="appt">Horário de término:</label>
+        <input type="time" id="appt" name="appt"></input>
 
-        <div>
-          <label>Turma:</label>
-          <br />
-          <select>
-            <option></option>
-            <option>1º Ano - Fundamental I</option>
-            <option>2º Ano - Fundamental I</option>
-            <option>3º Ano - Fundamental I</option>
-            <option>4º Ano - Fundamental I</option>
-            <option>5º Ano - Fundamental I</option>
-            <option>6º Ano A - Fundamental II</option>
-            <option>6º Ano B - Fundamental II</option>
-            <option>7º Ano A - Fundamental II</option>
-            <option>7º Ano B - Fundamental II</option>
-            <option>8º Ano A - Fundamental II</option>
-            <option>8º Ano B - Fundamental II</option>
-            <option>9º Ano A - Fundamental II</option>
-            <option>9º Ano B - Fundamental II</option>
-            <option>1º Ano A - Ensino Médio</option>
-            <option>1º Ano B - Ensino Médio</option>
-            <option>2º Ano - Ensino Médio</option>
-            <option>3º Ano - Ensino Médio</option>
-          </select>
-        </div>
-        <br />
-        <br />
-
-        <div>
-          <label>Quantidade:</label>
-          <br />
-          <input type="number" name="quantidade" />
-        </div>
-
-        <br />
-        <br />
 
         <br />
 
-        {/* BOTAO SUBMIT */}
+        <label htmlFor="data_sel1">Data:</label>
+        <input
+          type="date"
+          id="data_sel1"
+          name="data_sel1"
+          value={formData.data_sel1}
+          onChange={handleChange}
+          required
+        />
+
+        <br />
+
+        <label htmlFor="hr_entrada1">Horário de início:</label>
+        <input
+          type="time"
+          id="hr_entrada1"
+          name="hr_entrada1"
+          value={formData.hr_entrada1}
+          onChange={handleChange}
+          required
+        />
+
+        <br />
+
+        <label htmlFor="hr_saida1">Horário de término:</label>
+        <input
+          type="time"
+          id="hr_saida1"
+          name="hr_saida1"
+          value={formData.hr_saida1}
+          onChange={handleChange}
+          required
+        />
+
+        <br />
+
+        <label>Turma:</label>
+        <select
+          name="turma1"
+          value={formData.turma1}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Selecione uma turma</option>
+          <option>1º Ano - Fundamental I</option>
+          <option>2º Ano - Fundamental I</option>
+          <option>3º Ano - Fundamental I</option>
+          <option>4º Ano - Fundamental I</option>
+          <option>5º Ano - Fundamental I</option>
+          <option>6º Ano A - Fundamental II</option>
+          <option>6º Ano B - Fundamental II</option>
+          <option>7º Ano A - Fundamental II</option>
+          <option>7º Ano B - Fundamental II</option>
+          <option>8º Ano A - Fundamental II</option>
+          <option>8º Ano B - Fundamental II</option>
+          <option>9º Ano A - Fundamental II</option>
+          <option>9º Ano B - Fundamental II</option>
+          <option>1º Ano A - Ensino Médio</option>
+          <option>1º Ano B - Ensino Médio</option>
+          <option>2º Ano - Ensino Médio</option>
+          <option>3º Ano - Ensino Médio</option>
+        </select>
+
+        <br />
+
+        {/* <label htmlFor="cod_sala">Código da sala:</label> */}
+        <input
+          type="number"
+          id="cod_sala"
+          name="cod_sala"
+          value={formData.cod_sala = 1}
+          onChange={handleChange}
+          required
+          hidden
+          disabled
+        />
+
+        <br />
+
+        {/* Botão de submit */}
         <section>
-          <button className={styles.botaoForm}>
-            <Link href="/visualizacaoagendamentos" className={styles.Link}>
-              REALIZAR AGENDAMENTO
-            </Link>
+          <br />
+          <button type="submit" className={styles.botaoForm}>
+            REALIZAR AGENDAMENTO
           </button>
         </section>
       </form>
@@ -156,8 +258,3 @@ function agendaComputadorSenai() {
     </div>
   );
 }
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<formEquip/>);
-
-export default agendaComputadorSenai;
