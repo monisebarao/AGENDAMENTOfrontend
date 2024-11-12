@@ -36,7 +36,7 @@ export default function Form() {
           <input type="text" name="name" />
         </label>
         <br />
-        <br/>
+        <br />
 
         <label>Disciplina:</label>
         <select
@@ -64,13 +64,17 @@ export default function Form() {
         </select>
         <br />
 
-        <label for="appt">Horário de inicio:</label>
+        <label for='data'>Data:</label>
+        <input type="date" id='data' name='data'></input>
+        <br/>
+
+        <label for="appt">Horário de início:</label>
         <input type="time" id="appt" name="appt"></input>
         <br />
 
         <label for="appt">Horário de término:</label>
         <input type="time" id="appt" name="appt"></input>
-
+<br/>
 
         <label>Turma:</label>
         <select
@@ -99,8 +103,12 @@ export default function Form() {
 
         {/* BOTAO SUBMIT */}
         <section>
+
+          <br />
+
           <button className={styles.botaoForm}>
             <Link href="/visualizacaoagendamentos" className={styles.Link}>REALIZAR AGENDAMENTO</Link>
+
           </button>
         </section>
       </form>

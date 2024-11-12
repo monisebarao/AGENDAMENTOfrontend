@@ -166,10 +166,11 @@
 
 .botaoForm:hover {
   background-color: #691200;
+  text-decoration: none;
 }
 
 .disposicaoFormEquip button {
-  margin-left: 3%;
+  margin-left: 0%;
 }
 
 .disposicaoFormSalas {

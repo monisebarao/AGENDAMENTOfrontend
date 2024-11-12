@@ -69,7 +69,11 @@ export default function Form() {
         </select>
         <br />
 
-        <label for="appt">Horário de inicio:</label>
+        <label for='data'>Data:</label>
+        <input type="date" id='data' name='data'></input>
+        <br/>
+
+        <label for="appt">Horário de início:</label>
         <input type="time" id="appt" name="appt"></input>
         <br />
 
@@ -103,6 +107,7 @@ export default function Form() {
         <br />
 
         {/* BOTAO SUBMIT */}
+        <br/>
         <section>
           <button className={styles.botaoForm}>
             <Link href="/visualizacaoagendamentos" className={styles.Link}>
