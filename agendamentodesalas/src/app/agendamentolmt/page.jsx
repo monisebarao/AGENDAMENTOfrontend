@@ -22,7 +22,7 @@ export default function Form() {
   useEffect(() => {
     const fetchProfessores = async () => {
       try {
-        const response = await fetch("http://localhost:3001/professor");
+        const response = await fetch(`http://localhost:3001/professor/`);
         if (!response.ok) throw new Error("Erro ao buscar professores");
 
         const data = await response.json();
