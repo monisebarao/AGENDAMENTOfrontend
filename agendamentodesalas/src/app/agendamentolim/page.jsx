@@ -35,7 +35,7 @@ export default function Form() {
   }, []);
 
   // Atualizar os valores do formulário
-  const   handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -127,8 +127,8 @@ export default function Form() {
         {/* Outros campos do formulário */}
         <label>Disciplina:</label>
         <select
-          name="disciplina1"
-          value={formData.disciplina1}
+          name="disciplina2"
+          value={formData.disciplina2}
           onChange={handleChange}
           required
         >
@@ -152,60 +152,52 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
-
-        <label htmlFor="data_sel1">Data:</label>
+        <label htmlFor="data_sel2">Data:</label>
         <input
           type="date"
-          id="data_sel1"
-          name="data_sel1"
-          value={formData.data_sel1}
+          id="data_sel2"
+          name="data_sel2"
+          value={formData.data_sel2}
           onChange={handleChange}
           required
         />
 
         <br />
 
-        <label htmlFor="hr_entrada1">Horário de início:</label>
+        <label htmlFor="hr_entrada2">Horário de início:</label>
         <input
+          min="07:00"
+          max="17:10"
           type="time"
-          id="hr_entrada1"
-          name="hr_entrada1"
-          value={formData.hr_entrada1}
+          id="hr_entrada2"
+          name="hr_entrada2"
+          value={formData.hr_entrada2}
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
 
-        <label htmlFor="hr_saida1">Horário de término:</label>
+        <label htmlFor="hr_saida2">Horário de término:</label>
         <input
+          min="07:50"
+          max="18:00"
           type="time"
-          id="hr_saida1"
-          name="hr_saida1"
-          value={formData.hr_saida1}
+          id="hr_saida2"
+          name="hr_saida2"
+          value={formData.hr_saida2}
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
 
         <label>Turma:</label>
         <select
-          name="turma1"
-          value={formData.turma1}
+          name="turma2"
+          value={formData.turma2}
           onChange={handleChange}
           required
         >
@@ -234,9 +226,9 @@ export default function Form() {
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
           type="number"
-          id="cod_sala"
-          name="cod_sala"
-          value={formData.cod_sala = 1}
+          id="cod_eqp"
+          name="cod_eqp"
+          value={formData.cod_eqp = 32}
           onChange={handleChange}
           required
           hidden

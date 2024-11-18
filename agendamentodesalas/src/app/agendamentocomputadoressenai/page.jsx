@@ -152,20 +152,6 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
-
         <label htmlFor="data_sel1">Data:</label>
         <input
           type="date"
@@ -180,6 +166,8 @@ export default function Form() {
 
         <label htmlFor="hr_entrada1">Horário de início:</label>
         <input
+        min="07:00"
+        max="17:10"
           type="time"
           id="hr_entrada1"
           name="hr_entrada1"
@@ -187,11 +175,14 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário de termino: das 7h as 17h10.</small>
 
         <br />
 
         <label htmlFor="hr_saida1">Horário de término:</label>
         <input
+        min="07:50"
+        max="18:00"
           type="time"
           id="hr_saida1"
           name="hr_saida1"
@@ -199,6 +190,7 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário de termino: das 7h50 as 18h.</small>
 
         <br />
 

@@ -35,7 +35,7 @@ export default function Form() {
   }, []);
 
   // Atualizar os valores do formulário
-  const   handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -57,7 +57,7 @@ export default function Form() {
       });
 
       if (response.ok) {
-        alert("Agendamento realizado com sucesso!");
+        window.location.href = "../visualizacaoagendamentos";
         setFormData({
           data_sel1: "",
           hr_entrada1: "",
@@ -152,20 +152,6 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
-
         <label htmlFor="data_sel1">Data:</label>
         <input
           type="date"
@@ -180,6 +166,8 @@ export default function Form() {
 
         <label htmlFor="hr_entrada1">Horário de início:</label>
         <input
+          min="07:00"
+          max="17:10"
           type="time"
           id="hr_entrada1"
           name="hr_entrada1"
@@ -187,11 +175,14 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
 
         <label htmlFor="hr_saida1">Horário de término:</label>
         <input
+          min="07:50"
+          max="18:00"
           type="time"
           id="hr_saida1"
           name="hr_saida1"
@@ -199,7 +190,7 @@ export default function Form() {
           onChange={handleChange}
           required
         />
-
+        <small>Horário permitido: das 07h50 as 18h.</small>
         <br />
 
         <label>Turma:</label>
@@ -236,7 +227,7 @@ export default function Form() {
           type="number"
           id="cod_sala"
           name="cod_sala"
-          value={formData.cod_sala = 1}
+          value={formData.cod_sala = 5}
           onChange={handleChange}
           required
           hidden
