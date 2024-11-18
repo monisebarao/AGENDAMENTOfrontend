@@ -57,11 +57,7 @@ export default function Form() {
       });
 
       if (response.ok) {
-<<<<<<< HEAD
-     window.location.href = "../visualizacaoagendamentos";
-=======
         window.location = "agendamentodesalas/src/app/visualizacaoagendamentos/page.jsx";
->>>>>>> 5a7f7bfd8a12660fc3581215e37208f070895ea4
         setFormData({
           data_sel1: "",
           hr_entrada1: "",
