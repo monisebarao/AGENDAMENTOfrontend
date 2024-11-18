@@ -5,8 +5,33 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/sesilogo.png";
 import styless from "@/app/pagInicialSalas/page.module.css"
+import { useState } from "react";
 
 export default function Form() {
+  const [nif_prof, setNif_prof] = useState('');
+  const [nome_prof, setNome_prof] = useState('');
+
+  const Createprof = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:3001/professor/criar', {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify({
+          nif_prof,
+          nome_prof
+        }),
+      })
+
+    }
+
+    catch {
+      alert('Não foi possivel cadastrar um professor')
+    }
+
+  }
+
   return (
 
     <view>
@@ -55,7 +80,7 @@ export default function Form() {
           <div>
             <label>Nome do professor:</label>
             <br />
-            <input type="text" name="nomeProf" />
+            <input type="text" value={nome_prof} name="nomeProf" onChange={(e) => setNome_prof(e.target.value)} />
           </div>
           <br />
           <br />
@@ -63,7 +88,7 @@ export default function Form() {
           <div>
             <label>NIF:</label>
             <br />
-            <input type="number" name="quantidade" />
+            <input type="number" value={nif_prof} name="quantidade" onChange={(e) => setNif_prof(e.target.value)} />
           </div>
 
           <br />
@@ -72,8 +97,8 @@ export default function Form() {
           {/* BOTAO SUBMIT */}
           <section>
             <br />
-            <button className={styles.dropbtn2}>
-              <Link className={styles.texto} href="/pagInicialSalas">Realizar Cadastro</Link>
+            <button className={styles.dropbtn2} onClick={Createprof} type="submit">
+              Realizar Cadastro
             </button>
           </section>
 
