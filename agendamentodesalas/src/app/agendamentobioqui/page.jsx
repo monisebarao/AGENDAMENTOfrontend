@@ -166,6 +166,8 @@ export default function Form() {
 
         <label htmlFor="hr_entrada1">Horário de início:</label>
         <input
+        min="07:00"
+        max="17:10"
           type="time"
           id="hr_entrada1"
           name="hr_entrada1"
@@ -173,11 +175,14 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
 
         <label htmlFor="hr_saida1">Horário de término:</label>
         <input
+        min="07:50"
+        max="18:00"
           type="time"
           id="hr_saida1"
           name="hr_saida1"
@@ -185,6 +190,7 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
 

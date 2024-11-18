@@ -35,7 +35,7 @@ export default function Form() {
   }, []);
 
   // Atualizar os valores do formulário
-  const   handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -166,6 +166,8 @@ export default function Form() {
 
         <label htmlFor="hr_entrada2">Horário de início:</label>
         <input
+          min="07:00"
+          max="17:10"
           type="time"
           id="hr_entrada2"
           name="hr_entrada2"
@@ -173,11 +175,14 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
 
         <label htmlFor="hr_saida2">Horário de término:</label>
         <input
+          min="07:50"
+          max="18:00"
           type="time"
           id="hr_saida2"
           name="hr_saida2"
@@ -185,6 +190,7 @@ export default function Form() {
           onChange={handleChange}
           required
         />
+        <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
 
