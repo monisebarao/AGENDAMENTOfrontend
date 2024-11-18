@@ -152,20 +152,6 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
-
         <label htmlFor="data_sel1">Data:</label>
         <input
           type="date"
