@@ -13,10 +13,12 @@ export default function Header() {
           <section className={styles.Botaoprof}>
             <button className={styles.visubotaoprof}>
               <Link href="/cadastroprofessores" className={styles.visuprofLink}>Cadastrar Professor</Link></button>
-            <button className={styles.visubotaoprof}>
-              <Link href="/deletarprofessores" className={styles.visuprofLink}>Deletar Professor</Link></button>
-          
           </section>
+          <div>
+          <button className={styles.visubotaoprof1}>
+          <Link href="/deletarprofessores" className={styles.visuprofLink}>Deletar Professor</Link></button>
+          </div>
+         
         </div>
       </div>
       <br />
