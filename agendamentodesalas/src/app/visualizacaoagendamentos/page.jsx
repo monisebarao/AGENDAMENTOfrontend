@@ -14,8 +14,8 @@ export default function VisualizacaoAgendamentos() {
         <h2 className={styles.titulo}>Agendamentos Realizados</h2>
       </div>
       <button className={styles.editar}>
-        <Link className={styles.editar2} href="/pagInicialSalas">
-          EDITAR
+        <Link className={styles.editar2} href="/deletaragendamentos">
+          EXCLUIR UM AGENDAMENTO
         </Link></button>
       <br />
 
