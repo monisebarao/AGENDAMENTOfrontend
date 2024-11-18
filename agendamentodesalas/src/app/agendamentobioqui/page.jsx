@@ -152,20 +152,6 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
-
         <label htmlFor="data_sel1">Data:</label>
         <input
           type="date"
@@ -236,7 +222,7 @@ export default function Form() {
           type="number"
           id="cod_sala"
           name="cod_sala"
-          value={formData.cod_sala = 1}
+          value={formData.cod_sala = 4}
           onChange={handleChange}
           required
           hidden

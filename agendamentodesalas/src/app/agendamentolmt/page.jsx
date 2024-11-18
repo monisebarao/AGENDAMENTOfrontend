@@ -57,7 +57,7 @@ export default function Form() {
       });
 
       if (response.ok) {
-        alert("Agendamento realizado com sucesso!");
+     window.location = "agendamentodesalas/src/app/visualizacaoagendamentos/page.jsx";
         setFormData({
           data_sel1: "",
           hr_entrada1: "",
@@ -152,19 +152,6 @@ export default function Form() {
 
         <br />
 
-        <label for='data'>Data:</label>
-        <input type="date" id='data' name='data'></input>
-        <br/>
-
-        <label for="appt">Horário de início:</label>
-        <input type="time" id="appt" name="appt"></input>
-        <br />
-
-        <label for="appt">Horário de término:</label>
-        <input type="time" id="appt" name="appt"></input>
-
-
-        <br />
 
         <label htmlFor="data_sel1">Data:</label>
         <input
