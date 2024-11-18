@@ -57,7 +57,7 @@ export default function Form() {
       });
 
       if (response.ok) {
-        alert("Agendamento realizado com sucesso!");
+        window.location.href = "../visualizacaoagendamentos";
         setFormData({
           data_sel1: "",
           hr_entrada1: "",
