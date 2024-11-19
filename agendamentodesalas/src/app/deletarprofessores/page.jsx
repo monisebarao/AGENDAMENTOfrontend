@@ -94,22 +94,24 @@ export default function Form() {
                 </section>
 
                 <br />
-                <br />
+                <br/>
+                
 
                 {/* TITULO PAGINA */}
                 <section className={styles.titulocadastro}>
                     <h3>Exclua um professor aqui!</h3>
                 </section>
                 <br />
-
-                <form className={styles.disposicaocadastro} onSubmit={handleSubmit}>
+                <form className={styles.disposicaoFormcadast} onSubmit={handleSubmit}>
                     <label>Nome do professor:</label>
+                    <br/>
                     <select
                         name="id_prof"
                         value={formData.id_prof}
                         onChange={handleChange}
                         required
                     >
+
                         <option value="">Selecione um professor</option>
                         {professores.map((professor) => (
                             <option key={professor.id_prof} value={professor.id_prof}>
@@ -121,8 +123,8 @@ export default function Form() {
                     {/* BOTAO SUBMIT */}
                     <section>
                         <br />
-                        <button className={styles.dropbtn2} type="submit">
-                            Deletar Cadastro
+                        <button className={styles.botaodeletar} type="submit">
+                            DELETAR CADASTRO
                         </button>
                     </section>
                 </form>

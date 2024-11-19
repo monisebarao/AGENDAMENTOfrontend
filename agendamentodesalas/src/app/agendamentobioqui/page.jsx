@@ -57,6 +57,7 @@ export default function Form() {
       });
 
       if (response.ok) {
+        alert("Seu agendamento foi realizado com sucesso! Ao utilizar o laboratório de biologia e química, lembre-se de manter os produtos quimicos longe do manuseio dos alunos, a não ser que algum responsável esteja presente.");
         window.location.href = "../visualizacaoagendamentos";
         setFormData({
           data_sel1: "",

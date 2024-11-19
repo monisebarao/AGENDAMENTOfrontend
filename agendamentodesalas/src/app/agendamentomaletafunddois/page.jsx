@@ -248,6 +248,12 @@ export default function Form() {
         </section>
       </form>
 
+      <br/>
+
+<section className={styles.tituloGeral}>
+  <h3>Lembre-se: Os materiais são de uso coletivo, portanto, é importante usar com responsabilidade.</h3>
+</section>
+
       <Footer />
     </div>
   );

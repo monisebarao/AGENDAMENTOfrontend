@@ -76,7 +76,7 @@ export default function Form() {
         <br />
 
 
-        <form className={styles.disposicaocadastro}>
+        <form className={styles.disposicaoFormcadast}>
           <div>
             <label>Nome do professor:</label>
             <br />
@@ -94,15 +94,14 @@ export default function Form() {
           <br />
           <br />
 
-          {/* BOTAO SUBMIT */}
           <section>
-            <br />
-            <button className={styles.dropbtn2} onClick={Createprof} type="submit">
-              Realizar Cadastro
-            </button>
-          </section>
-
+          <br />
+          <button type="submit" className={styles.botaoFormcadast}>
+            REALIZAR CADASTRO
+          </button>
+        </section>
         </form>
+
         <Footer />
       </div>
     </view>
