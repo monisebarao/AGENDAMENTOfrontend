@@ -3,74 +3,49 @@ import Logo from "@/public/sesilogo.png";
 import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
-import cardsAgendamentosFeitos from "@/components/cardsAgenda";
 
 export default function VisualizacaoAgendamentos() {
   return (
     <div>
+      {/* HEADER */}
       <div className={styles.header}>
         <Image className={styles.logo} src={Logo} width={110} height={60} />
         <br />
-        <h2 className={styles.titulo}>Agendamentos Realizados</h2>
+        <h1 className={styles.titulo}>Agendamentos Realizados</h1>
       </div>
-      <button className={styles.editar}>
-        <Link className={styles.editar2} href="/deletaragendamentos">
-          EXCLUIR UM AGENDAMENTO
-        </Link></button>
+      <br />
+      <br />
+      {/* CONTEUDO */}
+
+      {/* Filtros */}
+      <div className={styles.disposicaoVisualizacao}>
+        <h3 className={styles.h3Visualizacao}>Selecione o agendamento que você quer visualizar.</h3>
+        <label>Escolher agendamento: </label><br/>
+        <select className={styles.selectVisualizacao}>
+          <option>afesfs</option>
+          <option>afesrbagarhfs</option>
+          <option>afeadsfs</option>
+          <option>afe3r4sfs</option>
+          <option>afe3rsfwegr4sfs</option>
+          <option>afe3r2142345234sfs</option>
+        </select>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
 
-      <div className={styles.disposicaoCardsAgenda}>
-        <div className={styles.cardAgendamentosFeitos}>
-          <h1>
-            {" "}
-            Sala Maker - 14/11
-            {/* {nome_sala} - {dtInicio} */}
-          </h1>{" "}
-          <br />
-          <h2>
-            {" "}
-            Horário: 16:15 - 17:30
-            {/* Horário: {hr_entrada1} - {hr_saida1} */}
-          </h2>
-          <br />
-          <h2>
-            {" "}
-            Professor responsável: Eduardo Henrique Assis
-            {/* Professor(a) responsável: {nome_prof} */}
-          </h2>
-          <br />
-        </div>
-      </div>
-      <br />
-      <br />
-      <div className={styles.disposicaoCardsAgenda}>
-        <div className={styles.cardAgendamentosFeitos}>
-          <h1>
-            {" "}
-            LMT - 15/11
-            {/* {nome_sala} - {dtInicio} */}
-          </h1>{" "}
-          <br />
-          <h2>
-            {" "}
-            Horário: 09:00 - 10:30
-            {/* Horário: {hr_entrada1} - {hr_saida1} */}
-          </h2>
-          <br />
-          <h2>
-            {" "}
-            Professor responsável: Rafael Sorensen
-            {/* Professor(a) responsável: {nome_prof} */}
-          </h2>
-          <br />
-        </div>
-      </div>
+      {/* EXIBIÇÃO DOS AGENDAMENTOS */}
 
-      <cardsAgendamentosFeitos />
+      <br />
+      <br />
       <br />
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">
-          🏠| Voltar para página de agendamentos
+          Voltar para página de agendamentos
         </Link>
       </button>
       <Footer />
