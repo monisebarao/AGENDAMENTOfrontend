@@ -25,12 +25,11 @@ export default function VisualizacaoAgendamentos() {
         <label>Escolher agendamento: </label>
         <br />
         <select className={styles.selectVisualizacao}>
-          <option>afesfs</option>
-          <option>afesrbagarhfs</option>
-          <option>afeadsfs</option>
-          <option>afe3r4sfs</option>
-          <option>afe3rsfwegr4sfs</option>
-          <option>afe3r2142345234sfs</option>
+          <option>teste</option>
+          <option>teste1</option>
+          <option>teste2</option>
+          <option>teste3</option>
+         
         </select>
       </div>
       <br />
