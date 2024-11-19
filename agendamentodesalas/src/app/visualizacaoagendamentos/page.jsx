@@ -19,8 +19,11 @@ export default function VisualizacaoAgendamentos() {
 
       {/* Filtros */}
       <div className={styles.disposicaoVisualizacao}>
-        <h3 className={styles.h3Visualizacao}>Selecione o agendamento que você quer visualizar.</h3>
-        <label>Escolher agendamento: </label><br/>
+        <h3 className={styles.h3Visualizacao}>
+          Selecione o agendamento que você quer visualizar.
+        </h3>
+        <label>Escolher agendamento: </label>
+        <br />
         <select className={styles.selectVisualizacao}>
           <option>afesfs</option>
           <option>afesrbagarhfs</option>
