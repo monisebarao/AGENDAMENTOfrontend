@@ -62,7 +62,7 @@ const info = [
   },
 
   { 
-    email: "carla.assis@portalsesisp.org.br ", 
+    email: "carla.assis@portalsesisp.org.br", 
     senha: "01021999" 
   },
 
@@ -122,7 +122,7 @@ const info = [
   },
 
   {
-    email: " julia.milani@portalsesisp.org.br",
+    email: "julia.milani@portalsesisp.org.br",
     senha: "01090317",
   },
 
