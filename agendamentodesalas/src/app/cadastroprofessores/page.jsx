@@ -94,12 +94,12 @@ export default function Form() {
           <br />
           <br />
 
-          <section>
+
           <br />
-          <button type="submit" className={styles.botaoFormcadast}>
-            REALIZAR CADASTRO
-          </button>
-        </section>
+          <div className= {styles.container}>
+            <button className={styles.botaoFormcadast}>REALIZAR CADASTRO</button>
+          </div>
+
         </form>
 
         <Footer />

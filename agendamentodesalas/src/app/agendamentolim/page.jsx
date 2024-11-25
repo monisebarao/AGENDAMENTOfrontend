@@ -151,6 +151,7 @@ export default function Form() {
         </select>
 
         <br />
+        <br />
 
         <label htmlFor="data_sel2">Data:</label>
         <input
@@ -162,6 +163,7 @@ export default function Form() {
           required
         />
 
+        <br />
         <br />
 
         <label htmlFor="hr_entrada2">Horário de início:</label>
@@ -178,6 +180,7 @@ export default function Form() {
         <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
+        <br />
 
         <label htmlFor="hr_saida2">Horário de término:</label>
         <input
@@ -193,7 +196,7 @@ export default function Form() {
         <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
-
+        <br />
         <label>Turma:</label>
         <select
           name="turma2"
@@ -222,6 +225,15 @@ export default function Form() {
         </select>
 
         <br />
+        <br />
+
+        <div>
+          <label>Quantidade de equipamentos:</label>
+          <br />
+          <input type="number" name="quantidade" />
+        </div>
+        <br />
+        <br/>
 
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
@@ -246,11 +258,11 @@ export default function Form() {
         </section>
       </form>
 
-      <br/>
+      <br />
 
-<section className={styles.tituloGeral}>
-  <h3>Lembre-se: Os materiais são de uso coletivo, portanto, é importante usar com responsabilidade.</h3>
-</section>
+      <section className={styles.tituloGeral}>
+        <h3>Lembre-se: Os materiais são de uso coletivo, portanto, é importante usar com responsabilidade.</h3>
+      </section>
 
       <Footer />
     </div>
