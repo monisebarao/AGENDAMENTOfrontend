@@ -14,6 +14,8 @@ export default function VisualizacaoAgendamentos() {
         <h1 className={styles.titulo}>Agendamentos Realizados</h1>
       </div>
       <br />
+      <br/>
+      <br/>
       <br />
       {/* CONTEUDO */}
 
@@ -39,17 +41,19 @@ export default function VisualizacaoAgendamentos() {
       <br />
       <br />
       <br />
+      <br/>
 
       {/* EXIBIÇÃO DOS AGENDAMENTOS */}
 
       <br />
       <br />
-      <br />
+  
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">
           Voltar para página de agendamentos
         </Link>
       </button>
+    
       <Footer />
     </div>
   );
