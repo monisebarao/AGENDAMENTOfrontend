@@ -75,11 +75,14 @@ export default function VisualizacaoAgendamentos() {
         <h1 className={styles.titulo}>Agendamentos Realizados</h1>
       </div>
       <br />
+      <br/>
+      <br/>
       <br />
       {/* CONTEUDO */}
 
       {/* Filtros */}
       <div className={styles.disposicaoVisualizacao}>
+<<<<<<< HEAD
         <h3 className={styles.h3Visualizacao}>Selecione a sala que você quer visualizar.</h3>
         <form onSubmit={handleSubmit} className={styles.disposicaoFormEquip}>
         {/* Campo de Seleção de Professor */}
@@ -96,6 +99,19 @@ export default function VisualizacaoAgendamentos() {
               {sala.nome_sala}
             </option>
           ))}
+=======
+        <h3 className={styles.h3Visualizacao}>
+          Selecione o agendamento que você quer visualizar.
+        </h3>
+        <label>Escolher agendamento: </label>
+        <br />
+        <select className={styles.selectVisualizacao}>
+          <option>teste</option>
+          <option>teste1</option>
+          <option>teste2</option>
+          <option>teste3</option>
+         
+>>>>>>> 414062199e42c2657052df69fa857865ac140b38
         </select>
  
         {salaConsulta.map((sala_consulta) => (
@@ -136,17 +152,19 @@ export default function VisualizacaoAgendamentos() {
       <br />
       <br />
       <br />
+      <br/>
 
       {/* EXIBIÇÃO DOS AGENDAMENTOS */}
 
       <br />
       <br />
-      <br />
+  
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">
           Voltar para página de agendamentos
         </Link>
       </button>
+    
       <Footer />
     </div>
   );

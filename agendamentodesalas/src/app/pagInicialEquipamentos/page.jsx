@@ -31,7 +31,7 @@ function Corpo2() {
       <br />
 
       <section className={styles.tituloGeral}>
-        <h3>Faça seu agendamento aqui</h3>
+        <h3>Faça seu agendamento de equipamentos aqui</h3>
       </section>
 
       <section className={styles.disposicaoCards}>

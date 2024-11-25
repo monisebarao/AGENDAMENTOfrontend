@@ -34,7 +34,7 @@ export default function Corpo() {
 
       {/* TITULO PAGINA */}
       <section className={styles.tituloGeral}>
-        <h3>Faça seu agendamento aqui</h3>
+        <h3>Faça seu agendamento de salas aqui</h3>
       </section>
 
       {/* SEÇÃO CARDS */}
