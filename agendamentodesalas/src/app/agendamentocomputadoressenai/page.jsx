@@ -35,7 +35,7 @@ export default function Form() {
   }, []);
 
   // Atualizar os valores do formulário
-  const   handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -151,6 +151,7 @@ export default function Form() {
         </select>
 
         <br />
+        <br/>
 
         <label htmlFor="data_sel1">Data:</label>
         <input
@@ -163,11 +164,12 @@ export default function Form() {
         />
 
         <br />
+        <br/>
 
         <label htmlFor="hr_entrada1">Horário de início:</label>
         <input
-        min="07:00"
-        max="17:10"
+          min="07:00"
+          max="17:10"
           type="time"
           id="hr_entrada1"
           name="hr_entrada1"
@@ -178,11 +180,12 @@ export default function Form() {
         <small>Horário de termino: das 7h as 17h10.</small>
 
         <br />
+        <br/>
 
         <label htmlFor="hr_saida1">Horário de término:</label>
         <input
-        min="07:50"
-        max="18:00"
+          min="07:50"
+          max="18:00"
           type="time"
           id="hr_saida1"
           name="hr_saida1"
@@ -193,6 +196,7 @@ export default function Form() {
         <small>Horário de termino: das 7h50 as 18h.</small>
 
         <br />
+        <br/>
 
         <label>Turma:</label>
         <select
@@ -222,6 +226,13 @@ export default function Form() {
         </select>
 
         <br />
+        <br/>
+
+        <div>
+          <label>Quantidade de equipamentos:</label>
+          <br />
+          <input type="number" name="quantidade" />
+        </div>
 
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
@@ -236,6 +247,8 @@ export default function Form() {
         />
 
         <br />
+        <br />
+        <br/>
 
         {/* Botão de submit */}
         <section>
@@ -246,11 +259,11 @@ export default function Form() {
         </section>
       </form>
 
-      <br/>
+      <br />
 
-<section className={styles.tituloGeral}>
-  <h3>Lembre-se: Os materiais são de uso coletivo, portanto, é importante usar com responsabilidade.</h3>
-</section>
+      <section className={styles.tituloGeral}>
+        <h3>Lembre-se: Os materiais são de uso coletivo, portanto, é importante usar com responsabilidade.</h3>
+      </section>
 
       <Footer />
     </div>

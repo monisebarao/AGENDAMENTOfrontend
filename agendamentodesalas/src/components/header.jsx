@@ -10,14 +10,13 @@ export default function Header() {
 
         <div className={styles.linha}>
           <Image className={styles.logo} src={Logo} width={103} height={60} />
-          {/* <section className={styles.Botaoprof}> */}
+
           <div className={styles.botaoprof}>
             <button className={styles.visubotaoprof}>
               <Link href="/cadastroprofessores" className={styles.visuprofLink}>Cadastrar Professor</Link></button>
-          {/* </section> */}
-          {/* <div> */}
+              
           <button className={styles.visubotaoprof1}>
-          <Link href="/deletarprofessores" className={styles.visuprofLink}>Deletar Professor</Link></button>
+          <Link href="/deletarprofessores" className={styles.visuprofLink1}>Deletar Professor</Link></button>
           </div>
          
         </div>

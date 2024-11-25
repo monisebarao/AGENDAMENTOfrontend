@@ -152,6 +152,7 @@ export default function Form() {
         </select>
 
         <br />
+        <br/>
 
         <label htmlFor="data_sel1">Data:</label>
         <input
@@ -164,6 +165,7 @@ export default function Form() {
         />
 
         <br />
+        <br/>
 
         <label htmlFor="hr_entrada1">Horário de início:</label>
         <input
@@ -179,6 +181,7 @@ export default function Form() {
         <small>Horário permitido: das 07h as 17h10.</small>
 
         <br />
+        <br/>
 
         <label htmlFor="hr_saida1">Horário de término:</label>
         <input
@@ -194,6 +197,7 @@ export default function Form() {
         <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
+        <br/>
 
         <label>Turma:</label>
         <select
@@ -223,6 +227,7 @@ export default function Form() {
         </select>
 
         <br />
+        <br/>
 
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
@@ -236,7 +241,6 @@ export default function Form() {
           disabled
         />
 
-        <br />
 
         {/* Botão de submit */}
         <section>
