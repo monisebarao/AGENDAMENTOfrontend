@@ -113,7 +113,7 @@ export default function VisualizacaoAgendamentos() {
 
       {/* Resultados da Consulta de Sala */}
       {salaConsulta.length > 0 && (
-        <div>
+        <div className={styles.divtal}>
           <h3 className={styles.h3Visualizacao}>Resultados da Sala</h3>
           <ul>
             {salaConsulta.map((item, index) => (
