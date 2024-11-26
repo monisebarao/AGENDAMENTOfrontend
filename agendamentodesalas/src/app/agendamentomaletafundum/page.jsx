@@ -9,13 +9,13 @@ import React, { useEffect, useState } from "react";
 export default function Form() {
   const [professores, setProfessores] = useState([]);
   const [formData, setFormData] = useState({
-    data_sel1: "",
-    hr_entrada1: "",
-    hr_saida1: "",
-    turma1: "",
-    disciplina1: "",
+    data_sel2: "",
+    hr_entrada2: "",
+    hr_saida2: "",
+    turma2: "",
+    disciplina2: "",
     id_prof: "",
-    cod_sala: "",
+    cod_eqp: "",
   });
 
   // Carregar a lista de professores da API quando o componente é montado
@@ -48,7 +48,7 @@ export default function Form() {
     console.log("Dados do formulário antes do envio:", formData);
 
     try {
-      const response = await fetch("http://localhost:3001/agenda1", {
+      const response = await fetch("http://localhost:3001/agenda2/132", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,15 +57,15 @@ export default function Form() {
       });
 
       if (response.ok) {
-        alert("Agendamento realizado com sucesso!");
+        window.location.href = "../visualizacaoagendamentos";
         setFormData({
-          data_sel1: "",
-          hr_entrada1: "",
-          hr_saida1: "",
-          turma1: "",
-          disciplina1: "",
+          data_sel2: "",
+          hr_entrada2: "",
+          hr_saida2: "",
+          turma2: "",
+          disciplina2: "",
           id_prof: "",
-          cod_sala: 1,
+          cod_eqp: 132,
         });
       } else {
         throw new Error("Erro ao realizar agendamento");
@@ -127,8 +127,8 @@ export default function Form() {
         {/* Outros campos do formulário */}
         <label>Disciplina:</label>
         <select
-          name="disciplina1"
-          value={formData.disciplina1}
+          name="disciplina2"
+          value={formData.disciplina2}
           onChange={handleChange}
           required
         >
@@ -153,28 +153,27 @@ export default function Form() {
         <br />
         <br/>
 
-
-        <label htmlFor="data_sel1">Data:</label>
+        <label htmlFor="data_sel2">Data:</label>
         <input
           type="date"
-          id="data_sel1"
-          name="data_sel1"
-          value={formData.data_sel1}
+          id="data_sel2"
+          name="data_sel2"
+          value={formData.data_sel2}
           onChange={handleChange}
           required
         />
 
         <br />
-        <br/>
+        <br />
 
-        <label htmlFor="hr_entrada1">Horário de início:</label>
+        <label htmlFor="hr_entrada2">Horário de início:</label>
         <input
           min="07:00"
           max="17:10"
           type="time"
-          id="hr_entrada1"
-          name="hr_entrada1"
-          value={formData.hr_entrada1}
+          id="hr_entrada2"
+          name="hr_entrada2"
+          value={formData.hr_entrada2}
           onChange={handleChange}
           required
         />
@@ -184,14 +183,14 @@ export default function Form() {
         <br />
         <br/>
 
-        <label htmlFor="hr_saida1">Horário de término:</label>
+        <label htmlFor="hr_saida2">Horário de término:</label>
         <input
           min="07:50"
           max="18:00"
           type="time"
-          id="hr_saida1"
-          name="hr_saida1"
-          value={formData.hr_saida1}
+          id="hr_saida2"
+          name="hr_saida2"
+          value={formData.hr_saida2}
           onChange={handleChange}
           required
         />
@@ -202,8 +201,8 @@ export default function Form() {
 
         <label>Turma:</label>
         <select
-          name="turma1"
-          value={formData.turma1}
+          name="turma2"
+          value={formData.turma2}
           onChange={handleChange}
           required
         >
@@ -227,21 +226,25 @@ export default function Form() {
           <option>3º Ano - Ensino Médio</option>
         </select>
 
+
         <br />
         <br/>
 
         <div>
           <label>Quantidade de equipamentos:</label>
           <br />
-          <input type="number" name="quantidade" />
+          <input name="qnt_eqp"
+          value={formData.qnt_eqp}
+          onChange={handleChange}
+          required />
         </div>
 
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
           type="number"
-          id="cod_sala"
-          name="cod_sala"
-          value={formData.cod_sala = 1}
+          id="cod_eqp"
+          name="cod_eqp"
+          value={formData.cod_eqp = 132}
           onChange={handleChange}
           required
           hidden

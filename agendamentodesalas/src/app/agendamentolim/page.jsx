@@ -9,13 +9,13 @@ import React, { useEffect, useState } from "react";
 export default function Form() {
   const [professores, setProfessores] = useState([]);
   const [formData, setFormData] = useState({
-    data_sel1: "",
-    hr_entrada1: "",
-    hr_saida1: "",
-    turma1: "",
-    disciplina1: "",
+    data_sel2: "",
+    hr_entrada2: "",
+    hr_saida2: "",
+    turma2: "",
+    disciplina2: "",
     id_prof: "",
-    cod_sala: "",
+    cod_eqp: "",
   });
 
   // Carregar a lista de professores da API quando o componente é montado
@@ -48,7 +48,7 @@ export default function Form() {
     console.log("Dados do formulário antes do envio:", formData);
 
     try {
-      const response = await fetch("http://localhost:3001/agenda1", {
+      const response = await fetch("http://localhost:3001/agenda2/1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,15 +57,15 @@ export default function Form() {
       });
 
       if (response.ok) {
-        alert("Agendamento realizado com sucesso!");
+        window.location.href = "../visualizacaoagendamentos";
         setFormData({
-          data_sel1: "",
-          hr_entrada1: "",
-          hr_saida1: "",
-          turma1: "",
-          disciplina1: "",
+          data_sel2: "",
+          hr_entrada2: "",
+          hr_saida2: "",
+          turma2: "",
+          disciplina2: "",
           id_prof: "",
-          cod_sala: 1,
+          cod_eqp: 1,
         });
       } else {
         throw new Error("Erro ao realizar agendamento");
@@ -151,7 +151,7 @@ export default function Form() {
         </select>
 
         <br />
-        <br />
+        <br/>
 
         <label htmlFor="data_sel2">Data:</label>
         <input
@@ -179,8 +179,9 @@ export default function Form() {
         />
         <small>Horário permitido: das 07h as 17h10.</small>
 
+
         <br />
-        <br />
+        <br/>
 
         <label htmlFor="hr_saida2">Horário de término:</label>
         <input
@@ -196,7 +197,8 @@ export default function Form() {
         <small>Horário permitido: das 07h50 as 18h.</small>
 
         <br />
-        <br />
+        <br/>
+
         <label>Turma:</label>
         <select
           name="turma2"
@@ -224,23 +226,25 @@ export default function Form() {
           <option>3º Ano - Ensino Médio</option>
         </select>
 
+
         <br />
-        <br />
+        <br/>
 
         <div>
           <label>Quantidade de equipamentos:</label>
           <br />
-          <input type="number" name="quantidade" />
+          <input name="qnt_eqp"
+          value={formData.qnt_eqp}
+          onChange={handleChange}
+          required />
         </div>
-        <br />
-        <br/>
 
         {/* <label htmlFor="cod_sala">Código da sala:</label> */}
         <input
           type="number"
           id="cod_eqp"
           name="cod_eqp"
-          value={formData.cod_eqp = 32}
+          value={formData.cod_eqp = 1}
           onChange={handleChange}
           required
           hidden
