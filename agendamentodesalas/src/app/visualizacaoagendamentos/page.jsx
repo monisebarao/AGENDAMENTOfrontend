@@ -92,8 +92,7 @@ export default function VisualizacaoAgendamentos() {
       <div className={styles.disposicaoVisualizacao}>
         <h3 className={styles.h3Visualizacao}>Selecione a sala que você quer visualizar.</h3>
         <form onSubmit={handleSubmitSala} className={styles.disposicaoFormEquip}>
-          <label>Nome da sala:</label>
-          <select
+          <select className={styles.select}
             name="cod_sala"
             value={formData.cod_sala}
             onChange={handleChange}
@@ -106,7 +105,8 @@ export default function VisualizacaoAgendamentos() {
               </option>
             ))}
           </select>
-          <button type="submit">PROCURAR</button>
+          
+          <button className={styles.procurar} type="submit">PROCURAR</button>
         </form>
       </div>
       <br />
@@ -131,8 +131,7 @@ export default function VisualizacaoAgendamentos() {
       <div className={styles.disposicaoVisualizacao}>
         <h3 className={styles.h3Visualizacao}>Selecione o equipamento que você quer visualizar.</h3>
         <form onSubmit={handleSubmitEquipamento} className={styles.disposicaoFormEquip}>
-          <label>Nome do equipamento:</label>
-          <select
+          <select className={styles.select}
             name="cod_eqp"
             value={formData.cod_eqp}
             onChange={handleChange}
@@ -145,7 +144,8 @@ export default function VisualizacaoAgendamentos() {
               </option>
             ))}
           </select>
-          <button type="submit">PROCURAR</button>
+          
+          <button className={styles.procurar} type="submit">PROCURAR</button>
         </form>
       </div>
       <br />
