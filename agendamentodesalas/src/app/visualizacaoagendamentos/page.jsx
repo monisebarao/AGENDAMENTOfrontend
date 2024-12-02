@@ -132,7 +132,7 @@ export default function VisualizacaoAgendamentos() {
       {/* Resultados da Consulta de Sala */}
       {salaConsulta.length > 0 && (
         <div className={styles.divtal}>
-          <h3 className={styles.h3Visualizacao}>Resultados da Sala</h3>
+          <h3 className={styles.resultadosdasala}>Resultados da Sala</h3>
           {salaConsulta.map((item, index) => (
             <li className={styles.linha} key={index}>
 
@@ -179,7 +179,7 @@ export default function VisualizacaoAgendamentos() {
       {/* Resultados da Consulta de Equipamento */}
       {equipamentoConsulta.length > 0 && (
         <div className={styles.divtal}>
-          <h3 className={styles.h3Visualizacao}>Resultados do Equipamento</h3>
+          <h3 className={styles.resultadosdasala}>Resultados do Equipamento</h3>
 
           {equipamentoConsulta.map((item, index) => (
             <li className={styles.linha} key={index}>
@@ -199,7 +199,18 @@ export default function VisualizacaoAgendamentos() {
 
         </div>
       )}
-
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    
+<button className={styles.botaoVoltar}>
+        <Link className={styles.link} href="/deletaragendamentos">
+          Excluir agendamentos
+        </Link>
+      </button>
       <br />
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">
