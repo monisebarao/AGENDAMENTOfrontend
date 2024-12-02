@@ -199,7 +199,16 @@ export default function VisualizacaoAgendamentos() {
 
         </div>
       )}
-
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+<button className={styles.botaoVoltar}>
+        <Link className={styles.link} href="/deletaragendamentos">
+          Excluir agendamentos
+        </Link>
+      </button>
       <br />
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">
