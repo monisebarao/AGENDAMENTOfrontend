@@ -164,15 +164,14 @@ export default function VisualizacaoAgendamentos() {
         
             {equipamentoConsulta.map((item, index) => (
               <li key={index}>
-<<<<<<< HEAD
-                {item.nome_prof}, {item.descricao} ({item.hr_entrada2} - {item.hr_saida2})
-                {item.data_sel2}, {item.turma2}
+
 =======
                 {item.nome_prof} - {item.descricao} 
                 
                 {item.hr_entrada2} - {item.hr_saida2}
                 
->>>>>>> 48f9ad2bbe62ba4849bb2f65f758e5ec82f4b22c
+                {item.data_sel2} - {item.turma2}
+
               </li>
             ))}
         
