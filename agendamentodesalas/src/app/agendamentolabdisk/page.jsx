@@ -48,7 +48,7 @@ export default function Form() {
     console.log("Dados do formulário antes do envio:", formData);
 
     try {
-      const response = await fetch("http://localhost:3001/agenda2/130", {
+      const response = await fetch("http://localhost:3001/agenda2/6", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +66,7 @@ export default function Form() {
             turma2: "",
             disciplina2: "",
             id_prof: "",
-            cod_eqp: 130,
+            cod_eqp: 6,
           });
         } else {
         throw new Error("Erro ao realizar agendamento");
@@ -245,7 +245,7 @@ export default function Form() {
           type="number"
           id="cod_eqp"
           name="cod_eqp"
-          value={formData.cod_eqp = 130}
+          value={formData.cod_eqp = 6}
           onChange={handleChange}
           required
           hidden

@@ -88,7 +88,7 @@ export default function Form() {
           <div>
             <label>NIF:</label>
             <br />
-            <input type="number" value={nif_prof} name="quantidade" onChange={(e) => setNif_prof(e.target.value)} />
+            <input type="number" value={nif_prof} name="nif_prof" onChange={(e) => setNif_prof(e.target.value)} />
           </div>
 
           <br />

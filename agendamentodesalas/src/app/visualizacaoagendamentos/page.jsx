@@ -158,6 +158,7 @@ export default function VisualizacaoAgendamentos() {
             {equipamentoConsulta.map((item, index) => (
               <li key={index}>
                 {item.nome_prof}, {item.descricao} ({item.hr_entrada2} - {item.hr_saida2})
+                {item.data_sel2}, {item.turma2}
               </li>
             ))}
           </ul>
