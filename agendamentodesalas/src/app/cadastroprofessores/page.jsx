@@ -125,10 +125,10 @@ export default function Form() {
             <input
               type="number"
               id="nifProf"
-              value={formData.nif_prof} // Acesse nif_prof através de formData
+              value={formData.nif_prof} 
               onChange={(e) =>
                 setFormData({ ...formData, nif_prof: e.target.value })
-              } // Atualize o estado corretamente
+              } 
             />
           </div>
 

@@ -64,9 +64,37 @@
     border-radius: 12rem;
     background-color: #c52c0e;
     color: white;
-
 }
 
+.linha{
+  background-color: #8a0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  justify-items: center;
+}
+
+.centro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centro2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.data{
+  font-size:80%;
+}
 .procurar{
   background-color: black;
     color: white;
@@ -85,8 +113,7 @@
 }
 .divtal{
   font-family: system-ui;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }

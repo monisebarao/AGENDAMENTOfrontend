@@ -105,7 +105,7 @@ export default function VisualizacaoAgendamentos() {
               </option>
             ))}
           </select>
-          
+
           <button className={styles.procurar} type="submit">PROCURAR</button>
         </form>
       </div>
@@ -115,15 +115,22 @@ export default function VisualizacaoAgendamentos() {
       {salaConsulta.length > 0 && (
         <div className={styles.divtal}>
           <h3 className={styles.h3Visualizacao}>Resultados da Sala</h3>
-          <ul>
-            {salaConsulta.map((item, index) => (
-              <li key={index}>
-                {item.nome_prof}, {item.disciplina1}, ({item.hr_entrada1} - {item.hr_saida1})
-          
-                {item.data_sel1}, {item.turma1}
-              </li>
-            ))}
-          </ul>
+          {salaConsulta.map((item, index) => (
+            <li className={styles.linha} key={index}>
+              {item.nome_prof} - {item.disciplina1}. <br /> <br/>
+
+              <div className={styles.centro}>
+                {item.turma1} <br /> <br />
+              </div>
+
+              <div className={styles.centro2}>
+                {item.hr_entrada1} - {item.hr_saida1}<br /><br />
+              </div>
+
+              <div className={styles.data}> {item.data_sel1}</div>
+
+            </li>
+          ))}
         </div>
       )}
 
@@ -144,7 +151,7 @@ export default function VisualizacaoAgendamentos() {
               </option>
             ))}
           </select>
-          
+
           <button className={styles.procurar} type="submit">PROCURAR</button>
         </form>
       </div>
@@ -152,15 +159,26 @@ export default function VisualizacaoAgendamentos() {
 
       {/* Resultados da Consulta de Equipamento */}
       {equipamentoConsulta.length > 0 && (
-        <div>
+        <div className={styles.divtal}>
           <h3 className={styles.h3Visualizacao}>Resultados do Equipamento</h3>
-          <ul>
+        
             {equipamentoConsulta.map((item, index) => (
-              <li key={index}>
-                {item.nome_prof}, {item.descricao} ({item.hr_entrada2} - {item.hr_saida2})
-              </li>
+             <li className={styles.linha} key={index}>
+             {item.nome_prof} - {item.disciplina2}. <br /> <br/>
+
+             <div className={styles.centro}>
+               {item.turma2} <br /> <br />
+             </div>
+
+             <div className={styles.centro2}>
+               {item.hr_entrada2} - {item.hr_saida2}<br /><br />
+             </div>
+
+             <div className={styles.data}> {item.data_sel2}</div>
+
+           </li>
             ))}
-          </ul>
+        
         </div>
       )}
 
