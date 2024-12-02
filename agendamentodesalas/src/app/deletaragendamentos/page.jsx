@@ -102,8 +102,9 @@ export default function Form() {
                 </section>
                 <br />
 
-                <form className={styles.disposicaocadastro} onSubmit={handleSubmit}>
+                <form className={styles.disposicaoFormcadast} onSubmit={handleSubmit}>
                     <label>Escolha um agendamento:</label>
+                    <br/>
                     <select
                         name="id_prof"
                         value={formData.id_prof}
@@ -117,14 +118,12 @@ export default function Form() {
                             </option>
                         ))}
                     </select>
-
+<br/>
+<br/>
                     {/* BOTAO SUBMIT */}
-                    <section>
-                        <br />
-                        <button className={styles.dropbtn2} type="submit">
-                            Deletar Cadastro
-                        </button>
-                    </section>
+                    <div className={styles.container}>
+                        <button className={styles.botaoFormcadast}>DELETAR CADASTRO</button>
+                    </div>
                 </form>
                 <Footer />
             </div>

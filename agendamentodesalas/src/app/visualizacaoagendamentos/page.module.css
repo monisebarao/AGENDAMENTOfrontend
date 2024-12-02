@@ -58,10 +58,24 @@
 }
 
 .h3Visualizacao {
+  display: flex;
+  justify-content: center;
   margin: 3%;
   border: solid 2px #c52c0e;
     padding: 10px;
-    border-radius: 12rem;
+    width: 100%;
+    background-color: #c52c0e;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resultadosdasala{
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  border: solid 2px #c52c0e;
+  border-radius:2rem;
+    padding: 10px;
     background-color: #c52c0e;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -99,7 +113,7 @@
 .procurar{
   background-color: black;
     color: white;
-    border-radius: 12rem;
+    border-radius: 0.5em;
     padding: 5px;
     margin-top: 1rem;
 }
