@@ -4,45 +4,70 @@ import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/sesilogo.png";
-import styless from "@/app/pagInicialSalas/page.module.css"
-import { useState } from "react";
+import styless from "@/app/pagInicialSalas/page.module.css";
+import { useEffect, useState } from "react";
 
 export default function Form() {
-  const [nif_prof, setNif_prof] = useState('');
-  const [nome_prof, setNome_prof] = useState('');
+  const [professores, setProfessores] = useState([]);
+  const [formData, setFormData] = useState({
+    nif_prof: "",
+    nome_prof: "",
+    adm: 0,
+  });
 
-  const Createprof = async (e) => {
+  useEffect(() => {
+    const fetchProfessores = async () => {
+      try {
+        const response = await fetch(`http://localhost:3001/professor`);
+        if (!response.ok) throw new Error("Erro ao buscar professores");
+
+        const data = await response.json();
+        setProfessores(data);
+      } catch (error) {
+        console.error("Erro ao buscar professores:", error);
+      }
+    };
+    fetchProfessores();
+  }, []);
+
+  // Submeter o formulário
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("Dados do formulário antes do envio:", formData);
+
     try {
-      const response = await fetch('http://localhost:3001/professor/criar', {
-        method: 'POST',
-        headers: { 'Content-type': 'application/json' },
-        body: JSON.stringify({
-          nif_prof,
-          nome_prof
-        }),
-      })
+      const response = await fetch("http://localhost:3001/professor/criar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
+      if (response.ok) {
+        window.location.href = "../pagInicialSalas";
+        setFormData({
+          nif_prof: "",
+          nome_prof: "",
+          adm: 0,
+        });
+      } else {
+        throw new Error("Erro ao realizar cadastro do novo docente!");
+      }
+    } catch (error) {
+      console.error("Erro ao enviar os dados:", error.message);
+      alert("Erro ao realizar cadastro");
     }
-
-    catch {
-      alert('Não foi possivel cadastrar um professor')
-    }
-
-  }
+  };
 
   return (
-
-    <view>
+    <div>
       <div className={styles.divpai}>
-
         <div className={styles.linha}>
           <Image className={styles.logo} src={Logo} width={103} height={60} />
-          <div className={styles.dropdown}>
-          </div>
+          <div className={styles.dropdown}></div>
         </div>
-
       </div>
       <br />
 
@@ -54,15 +79,18 @@ export default function Form() {
       </div>
 
       <div>
-
         {/* NAVEGAÇÃO */}
         <section className={styless.disposicaoNav}>
           <div className={styless.salaNav}>
-            <Link href="/pagInicialSalas" className={styless.Link}>SALAS</Link>
+            <Link href="/pagInicialSalas" className={styless.Link}>
+              SALAS
+            </Link>
           </div>
 
           <div className={styless.equipNav}>
-            <Link href='/pagInicialEquipamentos' className={styless.Link}>EQUIPAMENTOS</Link>
+            <Link href="/pagInicialEquipamentos" className={styless.Link}>
+              EQUIPAMENTOS
+            </Link>
           </div>
         </section>
 
@@ -75,36 +103,57 @@ export default function Form() {
         </section>
         <br />
 
-
-        <form className={styles.disposicaoFormcadast}>
+        <form className={styles.disposicaoFormcadast} onSubmit={handleSubmit}>
           <div>
-            <label>Nome do professor:</label>
+            <label htmlFor="nomeProf">Nome do professor:</label>
             <br />
-            <input type="text" value={nome_prof} name="nomeProf" onChange={(e) => setNome_prof(e.target.value)} />
+            <input
+              type="text"
+              id="nomeProf"
+              value={formData.nome_prof} // Acesse nome_prof através de formData
+              onChange={(e) =>
+                setFormData({ ...formData, nome_prof: e.target.value })
+              } // Atualize o estado corretamente
+            />
           </div>
           <br />
           <br />
 
           <div>
-            <label>NIF:</label>
+            <label htmlFor="nifProf">NIF:</label>
             <br />
-            <input type="number" value={nif_prof} name="quantidade" onChange={(e) => setNif_prof(e.target.value)} />
+            <input
+              type="number"
+              id="nifProf"
+              value={formData.nif_prof} // Acesse nif_prof através de formData
+              onChange={(e) =>
+                setFormData({ ...formData, nif_prof: e.target.value })
+              } // Atualize o estado corretamente
+            />
           </div>
 
+          <input
+            type="text"
+            id="cod_sala"
+            name="cod_sala"
+            value={formData.adm}
+            required
+            hidden
+            disabled
+          />
+
           <br />
           <br />
 
-
-          <br />
-          <div className= {styles.container}>
-            <button className={styles.botaoFormcadast}>REALIZAR CADASTRO</button>
+          <div className={styles.container}>
+            <button type="submit" className={styles.botaoFormcadast}>
+              REALIZAR CADASTRO
+            </button>
           </div>
-
         </form>
 
         <Footer />
       </div>
-    </view>
-
+    </div>
   );
 }
