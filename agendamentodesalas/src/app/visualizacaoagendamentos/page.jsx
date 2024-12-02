@@ -159,20 +159,24 @@ export default function VisualizacaoAgendamentos() {
 
       {/* Resultados da Consulta de Equipamento */}
       {equipamentoConsulta.length > 0 && (
-        <div>
+        <div className={styles.divtal}>
           <h3 className={styles.h3Visualizacao}>Resultados do Equipamento</h3>
         
             {equipamentoConsulta.map((item, index) => (
-              <li key={index}>
+             <li className={styles.linha} key={index}>
+             {item.nome_prof} - {item.disciplina2}. <br /> <br/>
 
-=======
-                {item.nome_prof} - {item.descricao} 
-                
-                {item.hr_entrada2} - {item.hr_saida2}
-                
-                {item.data_sel2} - {item.turma2}
+             <div className={styles.centro}>
+               {item.turma2} <br /> <br />
+             </div>
 
-              </li>
+             <div className={styles.centro2}>
+               {item.hr_entrada2} - {item.hr_saida2}<br /><br />
+             </div>
+
+             <div className={styles.data}> {item.data_sel2}</div>
+
+           </li>
             ))}
         
         </div>
