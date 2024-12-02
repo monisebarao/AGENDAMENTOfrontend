@@ -59,4 +59,34 @@
 
 .h3Visualizacao {
   margin: 3%;
+  border: solid 2px #c52c0e;
+    padding: 10px;
+    border-radius: 12rem;
+    background-color: #c52c0e;
+    color: white;
+
+}
+
+.procurar{
+  background-color: black;
+    color: white;
+    border-radius: 12rem;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+.select{
+  font-size: 1rem;
+    width: 100%;
+    padding: 0.8%;
+    background-color: rgb(222, 222, 222);
+    border: none;
+    border-radius: 5px;
+}
+.divtal{
+  font-family: system-ui;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
 }
