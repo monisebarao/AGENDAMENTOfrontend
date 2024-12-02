@@ -64,6 +64,7 @@
     border-radius: 12rem;
     background-color: #c52c0e;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .linha{
@@ -93,7 +94,7 @@
 }
 
 .data{
-  font-size:80%;
+  font-size:120%;
 }
 .procurar{
   background-color: black;

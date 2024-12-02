@@ -75,6 +75,24 @@ export default function VisualizacaoAgendamentos() {
     }
   };
 
+  const formattedDate = (data) => {
+    if (data) {
+      return new Date(data).toISOString().split("T")[0];
+    } else return "";
+  };
+
+  const viewDate = (data) => {
+    if (data) {
+      console.log("Data: ", data)
+
+      const dateStr = formattedDate(data); // Retorna uma string no formato aaaa-mm-dd
+      const [year, month, day] = dateStr.split("-"); // Desestrutura a string
+      return `${day}/${month}/${year}`; // Retorna no formato dd/mm/aaaa
+    } else {
+      return "Data não encontrada";
+    }
+  };
+
   return (
     <div>
       {/* HEADER */}
@@ -117,17 +135,18 @@ export default function VisualizacaoAgendamentos() {
           <h3 className={styles.h3Visualizacao}>Resultados da Sala</h3>
           {salaConsulta.map((item, index) => (
             <li className={styles.linha} key={index}>
-              {item.nome_prof} - {item.disciplina1}. <br /> <br/>
+
+              <div className={styles.data}> {viewDate(item.data_sel1)}</div>
+            <br/>
+              {item.nome_prof} - {item.disciplina1}. <br /> <br />
 
               <div className={styles.centro}>
                 {item.turma1} <br /> <br />
               </div>
 
               <div className={styles.centro2}>
-                {item.hr_entrada1} - {item.hr_saida1}<br /><br />
+                {item.hr_entrada1} - {item.hr_saida1}<br />
               </div>
-
-              <div className={styles.data}> {item.data_sel1}</div>
 
             </li>
           ))}
@@ -161,24 +180,23 @@ export default function VisualizacaoAgendamentos() {
       {equipamentoConsulta.length > 0 && (
         <div className={styles.divtal}>
           <h3 className={styles.h3Visualizacao}>Resultados do Equipamento</h3>
-        
-            {equipamentoConsulta.map((item, index) => (
-             <li className={styles.linha} key={index}>
-             {item.nome_prof} - {item.disciplina2}. <br /> <br/>
 
-             <div className={styles.centro}>
-               {item.turma2} <br /> <br />
-             </div>
+          {equipamentoConsulta.map((item, index) => (
+            <li className={styles.linha} key={index}>
+                 <div className={styles.data}> {viewDate(item.data_sel2)}</div>
+                 <br/>
+              {item.nome_prof} - {item.disciplina2}. <br /> <br />
 
-             <div className={styles.centro2}>
-               {item.hr_entrada2} - {item.hr_saida2}<br /><br />
-             </div>
+              <div className={styles.centro}>
+                {item.turma2} <br /> <br />
+              </div>
 
-             <div className={styles.data}> {item.data_sel2}</div>
+              <div className={styles.centro2}>
+                {item.hr_entrada2} - {item.hr_saida2}<br />
+              </div>
+            </li>
+          ))}
 
-           </li>
-            ))}
-        
         </div>
       )}
 
