@@ -8,25 +8,25 @@ import styless from "@/app/pagInicialSalas/page.module.css";
 import { useState, useEffect } from "react";
 
 export default function Form() {
-    const [professores, setProfessores] = useState([]);
+    const [agendas1, setAgendas1] = useState([]);
     const [formData, setFormData] = useState({
         id_prof: "",
     });
   
     // Carregar a lista de professores da API quando o componente é montado
     useEffect(() => {
-        const fetchProfessores = async () => {
+        const fetchAgenda1 = async () => {
             try {
-                const response = await fetch(`http://localhost:3001/professor/`);
+                const response = await fetch(`http://localhost:3001/agenda1/`);
                 if (!response.ok) throw new Error("Erro ao buscar professores");
   
                 const data = await response.json();
-                setProfessores(data);
+                setAgendas1(data);
             } catch (error) {
                 console.error("Erro ao buscar professores:", error);
             }
         };
-        fetchProfessores();
+        fetchAgenda1();
     }, []);
   
     // Atualizar os valores do formulário
@@ -43,7 +43,7 @@ export default function Form() {
         console.log("Dados do formulário antes do envio:", formData);
   
         try {
-            const response = await fetch(`http://localhost:3001/professor/${formData.id_prof}`, {
+            const response = await fetch(`http://localhost:3001/agenda1/${formData.agenda1_id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -52,9 +52,9 @@ export default function Form() {
             });
   
             if (response.ok) {
-                alert("Professor deletado com sucesso!"); // Mensagem de sucesso
+                alert("Agendamento deletado com sucesso!"); // Mensagem de sucesso
                 setFormData({
-                    id_prof: ""
+                    agenda1_id: ""
                 });
             } else {
                 throw new Error("Erro ao realizar a exclusão");
@@ -105,15 +105,15 @@ export default function Form() {
                 <form className={styles.disposicaocadastro} onSubmit={handleSubmit}>
                     <label>Escolha um agendamento:</label>
                     <select
-                        name="id_prof"
-                        value={formData.id_prof}
+                        name="agenda1_id"
+                        value={formData.agenda1_id}
                         onChange={handleChange}
                         required
                     >
                         <option value="">Selecione um agendamento</option>
-                        {professores.map((professor) => (
-                            <option key={professor.id_prof} value={professor.id_prof}>
-                                {professor.nome_prof}
+                        {professores.map((agenda1) => (
+                            <option key={agenda1.agenda1_id} value={agenda1.agenda1_id}>
+                                {agenda1.nome_sala}, {agenda1.nome_prof}, {agenda1.data_sel1}, {agenda1.hr_entrada1}, {agenda1.hr_saida1}, {agenda1.turma1}, {agenda1.disciplina1}
                             </option>
                         ))}
                     </select>
