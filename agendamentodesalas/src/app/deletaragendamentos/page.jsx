@@ -78,7 +78,7 @@ export default function Form() {
             <div className={styles.headerconteiner}>
                 <div className={styles.titulo}>
                     <h1 className={styles.tituloPrincipal}>DELETAR</h1>
-                    <h3 className={styles.bemVindos}>Professores</h3>
+                    <h3 className={styles.bemVindos}>Agendamentos</h3>
                 </div>
             </div>
 
@@ -98,19 +98,19 @@ export default function Form() {
 
                 {/* TITULO PAGINA */}
                 <section className={styles.titulocadastro}>
-                    <h3>Exclua um professor aqui!</h3>
+                    <h3>Exclua um agendamento aqui!</h3>
                 </section>
                 <br />
 
                 <form className={styles.disposicaocadastro} onSubmit={handleSubmit}>
-                    <label>Nome do professor:</label>
+                    <label>Escolha um agendamento:</label>
                     <select
                         name="id_prof"
                         value={formData.id_prof}
                         onChange={handleChange}
                         required
                     >
-                        <option value="">Selecione um professor</option>
+                        <option value="">Selecione um agendamento</option>
                         {professores.map((professor) => (
                             <option key={professor.id_prof} value={professor.id_prof}>
                                 {professor.nome_prof}
