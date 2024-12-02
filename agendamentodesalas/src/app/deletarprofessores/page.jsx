@@ -61,7 +61,7 @@ export default function Form() {
             }
         } catch (error) {
             console.error("Erro ao enviar os dados:", error.message);
-            alert("Erro ao realizar a exclusão");
+            alert("Você não pode excluir um professor que possui agendamentos feitos.");
         }
     };
 
