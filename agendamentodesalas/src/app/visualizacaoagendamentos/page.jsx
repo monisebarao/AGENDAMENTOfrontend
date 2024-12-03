@@ -108,7 +108,7 @@ export default function VisualizacaoAgendamentos() {
 
       {/* Seleção de Sala */}
       <div className={styles.disposicaoVisualizacao}>
-        <h3 className={styles.h3Visualizacao}>Selecione a sala que você quer visualizar.</h3>
+        <h3 className={styles.h3Visualizacao}>SALAS</h3>
         <form onSubmit={handleSubmitSala} className={styles.disposicaoFormEquip}>
           <select className={styles.select}
             name="cod_sala"
@@ -152,10 +152,11 @@ export default function VisualizacaoAgendamentos() {
           ))}
         </div>
       )}
+      <hr className={styles.linha1}></hr>
 
       {/* Seleção de Equipamento */}
-      <div className={styles.disposicaoVisualizacao}>
-        <h3 className={styles.h3Visualizacao}>Selecione o equipamento que você quer visualizar.</h3>
+      <div className={styles.disposicaoVisualizacao1}>
+        <h3 className={styles.h3Visualizacao}>EQUIPAMENTOS</h3>
         <form onSubmit={handleSubmitEquipamento} className={styles.disposicaoFormEquip}>
           <select className={styles.select}
             name="cod_eqp"
@@ -199,7 +200,16 @@ export default function VisualizacaoAgendamentos() {
 
         </div>
       )}
-
+<br />
+<br />
+<br />
+<br />
+<br />
+      <button className={styles.botaoVoltar}>
+        <Link className={styles.link} href="/deletaragendamentos">
+          Excluir agendamentos
+        </Link>
+      </button>
       <br />
       <button className={styles.botaoVoltar}>
         <Link className={styles.link} href="/pagInicialSalas">

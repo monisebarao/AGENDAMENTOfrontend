@@ -50,6 +50,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: -4rem;
+    margin-bottom: 5rem;
+}
+
+.disposicaoVisualizacao1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .selectVisualizacao {
@@ -59,14 +70,16 @@
 
 .h3Visualizacao {
   display: flex;
-  justify-content: center;
-  margin: 3%;
+      justify-content: center;
+      margin: 1%;
+      padding: 10px;
+      width: 100%;
+      color: #c52c0e;
+      font-size: xx-large;
+}
+
+.linha1{
   border: solid 2px #c52c0e;
-    padding: 10px;
-    width: 100%;
-    background-color: #c52c0e;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .resultadosdasala{
