@@ -56,7 +56,6 @@ export default function Form() {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
         if (response.ok) {
           window.location.href = "../visualizacaoagendamentos";
           setFormData({
